@@ -136,6 +136,74 @@ foreach ($statusLabels as $key => $label) {
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
         
+        /* Novos estilos para o carrossel */
+        .favoritas-carrossel {
+            margin-top: 15px;
+            position: relative;
+        }
+        
+        .carrossel-container {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            gap: 15px;
+            padding-bottom: 15px;
+            scrollbar-width: none; /* Firefox */
+        }
+        
+        .carrossel-container::-webkit-scrollbar {
+            display: none; /* Chrome/Safari */
+        }
+        
+        .favorita-item {
+            flex: 0 0 auto;
+            width: 120px;
+            scroll-snap-align: start;
+            text-align: center;
+        }
+        
+        .favorita-poster {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .favorita-item:hover .favorita-poster {
+            transform: scale(1.05);
+        }
+        
+        .favorita-nome {
+            margin-top: 8px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        .carrossel-nav {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        
+        .carrossel-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #ddd;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .carrossel-dot.active {
+            background-color: #e50914;
+        }
+
         .stats-container {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -264,7 +332,35 @@ foreach ($statusLabels as $key => $label) {
         </div>
     </div>
 
+    <?php if (!empty($favoritas)): ?>
+<div class="favoritas-carrossel">
+    <div class="carrossel-container" id="favoritasCarrossel">
+        <?php foreach ($favoritas as $serie): ?>
+        <div class="favorita-item">
+            <img src="<?= BASE_URL . '/' . $serie['imagem'] ?>" alt="<?= htmlspecialchars($serie['titulo']) ?>" class="favorita-poster" onerror="this.src='<?= BASE_URL ?>/assets/default-poster.jpg'">
+            <div class="favorita-nome"><?= htmlspecialchars($serie['titulo']) ?></div>
+        </div>
+        <?php endforeach; ?>
+    </div>
+    
+    <div class="carrossel-nav">
+        <?php 
+        // Calcula quantos dots são necessários baseado no número de itens e largura
+        $itemsPerView = 4; // Quantos itens são visíveis por vez
+        $totalItems = count($favoritas);
+        $totalDots = ceil($totalItems / $itemsPerView);
+        ?>
+        <?php for ($i = 0; $i < min(5, $totalDots); $i++): ?>
+        <div class="carrossel-dot <?= $i === 0 ? 'active' : '' ?>" data-index="<?= $i ?>"></div>
+        <?php endfor; ?>
+    </div>
+</div>
+<?php else: ?>
+<p style="margin-top: 15px; color: #666; text-align: center;">Nenhuma série favorita ainda</p>
+<?php endif; ?>
+
     <div class="stats-container">
+        
         <!-- Card Total de Séries -->
         <div class="stat-card">
             <div class="stat-title">
@@ -276,7 +372,8 @@ foreach ($statusLabels as $key => $label) {
         </div>
 
         <!-- Card Séries Favoritas -->
-        <div class="stat-card">
+   <!-- Card Séries Favoritas com Carrossel -->
+            <div class="stat-card">
             <div class="stat-title">
                 <i class="bi bi-star-fill"></i>
                 Séries Favoritas
@@ -380,6 +477,57 @@ foreach ($statusLabels as $key => $label) {
     <p>&copy; <?= date('Y') ?> dexSeries</p>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const carrossel = document.getElementById('favoritasCarrossel');
+    const dots = document.querySelectorAll('.carrossel-dot');
+    const favoritaItems = document.querySelectorAll('.favorita-item');
+    
+    if (carrossel && dots.length > 0 && favoritaItems.length > 0) {
+        const itemWidth = favoritaItems[0].offsetWidth + 15; // Largura do item + gap
+        const itemsPerView = Math.floor(carrossel.offsetWidth / itemWidth);
+        
+        // Atualiza dots ativos conforme scroll
+        carrossel.addEventListener('scroll', function() {
+            const scrollPos = carrossel.scrollLeft;
+            const activeIndex = Math.round(scrollPos / (itemWidth * itemsPerView));
+            
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === activeIndex);
+            });
+        });
+        
+        // Navegação pelos dots
+        dots.forEach(dot => {
+            dot.addEventListener('click', function() {
+                const index = parseInt(this.getAttribute('data-index'));
+                carrossel.scrollTo({
+                    left: index * (itemWidth * itemsPerView),
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Redimensionamento da janela
+        window.addEventListener('resize', function() {
+            const newItemsPerView = Math.floor(carrossel.offsetWidth / itemWidth);
+            if (newItemsPerView !== itemsPerView) {
+                // Atualiza a posição do scroll para manter o item visível
+                const activeDot = document.querySelector('.carrossel-dot.active');
+                if (activeDot) {
+                    const index = parseInt(activeDot.getAttribute('data-index'));
+                    carrossel.scrollTo({
+                        left: index * (itemWidth * newItemsPerView),
+                        behavior: 'auto'
+                    });
+                }
+            }
+        });
+    }
+});
+</script>
+</script>
 </body>
 </html>
