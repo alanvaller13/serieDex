@@ -98,8 +98,8 @@ if (isset($_GET['error'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minhas Séries</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-    <style>
-        /* ============================================= */
+<style>
+/* ============================================= */
 /* ============== GLOBAL STYLES ================ */
 /* ============================================= */
 :root {
@@ -696,7 +696,7 @@ body {
   .header-title {
     font-size: 1.8rem;
     letter-spacing: 1px;
-  }
+  }}
   
 @media (max-width: 768px) {
   .pagination-container {
