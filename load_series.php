@@ -1,7 +1,7 @@
 <?php
 // Definir BASE_URL se não estiver definida
 if (!defined('BASE_URL')) {
-    define('BASE_URL', 'http://localhost/dexSeries');
+    define('BASE_URL', 'https://dexseries.onrender.com/');
 }
 
 function loadJsonData($file) {
