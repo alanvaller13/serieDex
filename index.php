@@ -678,7 +678,7 @@ if (isset($_GET['error'])) {
                 <a href="Outras.php" class="btn btn-primary">
                     <i class="bi bi-plus-circle-fill"></i> Outras Séries
                 </a>
-                <a href="MeuStatus.php" class="btn btn-primary">
+                <a href="meuStatus.php" class="btn btn-primary">
                     <i class="bi bi-star-circle-fill"></i> Meu Estatus
                 </a>
             </div>
