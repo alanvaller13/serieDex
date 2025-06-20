@@ -49,7 +49,7 @@ function getSerieStatusColor($status) {
 
 // Definir BASE_URL se não estiver definida
 if (!defined('BASE_URL')) {
-    define('BASE_URL', 'dexseries.onrender.com/');
+    define('BASE_URL', 'https://dexseries.onrender.com/');
 }
 
 // Exibir mensagens de feedback
