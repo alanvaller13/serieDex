@@ -53,11 +53,10 @@ function getStreamingIcon($ondeVisto) {
         'Web' => "2.png",
         'Netflix' => 'netflix.png',
         'Prime Video' => 'prime-video.png',
-        'Disney+' => 'disneymais.png',
-        'HBO Max' => 'hbo.png',
-        'Apple TV+' => 'apple.png',
         'GloboPlay' => 'globoplay.png',
-        'Star+' => 'star.png',
+        'Disney+' => 'disneymais.png',
+        'HBO MAX' => 'hbomax.png',
+        'Apple TV+' => 'apple.png',
         'Paramount+' => 'paramountmais.png',
         'Crunchyroll' => 'crunchyroll.png'
     ];
