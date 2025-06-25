@@ -469,16 +469,6 @@
     "favorita": false,
     "nEpisodios": 51
   },
-
-  
-
-
-
-
-
-
-
-
   {
     "id": "S105",
     "titulo_original": "Everything Sucks!",
@@ -491,22 +481,13 @@
     "classificacao": "12",
     "sinopse": "Ambientada nos anos 90, a série mostra um grupo de adolescentes tentando lidar com a vida escolar e pessoal em uma cidadezinha do Oregon.",
     "avaliacao": 4,
-    "generos": [
-      "Comédia",
-      "Drama",
-      "Adolescente"
-    ],
+    "generos": ["Comédia", "Drama", "Adolescente"],
     "emissora": "Netflix",
     "onde_visto": "Netflix",
     "data_cadastro": "2025-06-15 21:04:42",
     "user_status": "Concluída",
     "progresso": 100,
-    "equipe": [
-      {
-        "nome": "Ben York Jones",
-        "funcao": "Criador(a)"
-      }
-    ],
+    "equipe": [],
     "imagem": "uploads/S105.png",
     "favorita": false,
     "nEpisodios": 10
@@ -523,22 +504,13 @@
     "classificacao": "12",
     "sinopse": "Uma produtora de TV tenta manter a carreira e a sanidade quando sua mãe começa a trabalhar como estagiária no mesmo jornal televisivo.",
     "avaliacao": 4,
-    "generos": [
-      "Comédia",
-      "Sitcom",
-      "Drama"
-    ],
+    "generos": ["Comédia", "Sitcom", "Drama"],
     "emissora": "NBC",
     "onde_visto": "Netflix",
     "data_cadastro": "2025-06-15 21:04:43",
     "user_status": "Concluída",
     "progresso": 100,
-    "equipe": [
-      {
-        "nome": "Tracey Wigfield",
-        "funcao": "Criador(a)"
-      }
-    ],
+    "equipe": [],
     "imagem": "uploads/S106.png",
     "favorita": false,
     "nEpisodios": 23
@@ -555,22 +527,13 @@
     "classificacao": "16",
     "sinopse": "Após uma mudança radical, uma corretora de imóveis e sua família enfrentam situações bizarras envolvendo canibalismo suburbano.",
     "avaliacao": 4.5,
-    "generos": [
-      "Comédia",
-      "Terror",
-      "Ficção"
-    ],
+    "generos": ["Comédia", "Terror", "Ficção"],
     "emissora": "Netflix",
     "onde_visto": "Netflix",
     "data_cadastro": "2025-06-15 21:04:44",
     "user_status": "Concluída",
     "progresso": 100,
-    "equipe": [
-      {
-        "nome": "Victor Fresco",
-        "funcao": "Criador(a)"
-      }
-    ],
+    "equipe": [],
     "imagem": "uploads/S107.png",
     "favorita": false,
     "nEpisodios": 30
@@ -587,11 +550,7 @@
     "classificacao": "14",
     "sinopse": "Uma ex-estrela mirim dos anos 80 tenta retornar aos holofotes na era digital, enfrentando desafios hilários com sua família disfuncional.",
     "avaliacao": 4,
-    "generos": [
-      "Comédia",
-      "Drama",
-      "Nostálgico"
-    ],
+    "generos": ["Comédia", "Drama", "Nostálgico"],
     "emissora": "Netflix",
     "onde_visto": "Netflix",
     "data_cadastro": "2025-06-15 21:04:45",
@@ -614,11 +573,7 @@
     "classificacao": "Livre",
     "sinopse": "A vida tranquila de Kaoru muda com a chegada de Rilakkuma, um urso de pelúcia preguiçoso que adora relaxar e comer.",
     "avaliacao": 4,
-    "generos": [
-      "Animação",
-      "Slice of Life",
-      "Infantil"
-    ],
+    "generos": ["Animação", "Slice of Life", "Infantil"],
     "emissora": "Netflix",
     "onde_visto": "Netflix",
     "data_cadastro": "2025-06-15 21:04:45",
@@ -641,11 +596,7 @@
     "classificacao": "10",
     "sinopse": "Três adolescentes acordam em um mundo estranho e devem resolver enigmas e enfrentar perigos para descobrir quem são e como sair dali.",
     "avaliacao": 5,
-    "generos": [
-      "Animação",
-      "Aventura",
-      "Mistério"
-    ],
+    "generos": ["Animação", "Aventura", "Mistério"],
     "emissora": "Netflix",
     "onde_visto": "Netflix",
     "data_cadastro": "2025-06-15 21:04:46",
@@ -668,11 +619,7 @@
     "classificacao": "10",
     "sinopse": "Uma adolescente vigarista se infiltra na vida de uma família para se vingar, mas sentimentos verdadeiros surgem e complicam seus planos.",
     "avaliacao": 4,
-    "generos": [
-      "Comédia",
-      "Drama",
-      "Família"
-    ],
+    "generos": ["Comédia", "Drama", "Família"],
     "emissora": "Netflix",
     "onde_visto": "Netflix",
     "data_cadastro": "2025-06-15 21:04:47",
@@ -695,22 +642,13 @@
     "classificacao": "16",
     "sinopse": "Uma adolescente intimidada se transforma e busca vingança contra todos que a humilharam — agora através de concursos de beleza.",
     "avaliacao": 4,
-    "generos": [
-      "Comédia",
-      "Drama",
-      "Satírico"
-    ],
+    "generos": ["Comédia", "Drama", "Satírico"],
     "emissora": "Netflix",
     "onde_visto": "Netflix",
     "data_cadastro": "2025-06-15 21:04:48",
     "user_status": "Concluída",
     "progresso": 100,
-    "equipe": [
-      {
-        "nome": "Lauren Gussis",
-        "funcao": "Criador(a)"
-      }
-    ],
+    "equipe": [],
     "imagem": "uploads/S112.png",
     "favorita": false,
     "nEpisodios": 22
@@ -727,23 +665,16 @@
     "classificacao": "16",
     "sinopse": "Um anjo da guarda questiona as regras e desafia o sistema celestial.",
     "avaliacao": 4,
-    "generos": [
-      "Fantasia",
-      "Comédia",
-      "Drama"
-    ],
+    "generos": ["Fantasia", "Comédia", "Drama"],
     "emissora": "Netflix",
     "onde_visto": "Netflix",
     "data_cadastro": "2025-06-15 21:01:00",
     "user_status": "Concluída",
     "progresso": 100,
-    "equipe": [
-      {
-        "nome": "Daniel Rezende",
-        "funcao": "Criador"
-      }
-    ],
-    "imagem": "uploads/S113.png"
+    "equipe": [],
+    "imagem": "uploads/S113.png",
+    "favorita": false,
+    "nEpisodios": 8
   },
   {
     "id": "S114",
@@ -757,23 +688,16 @@
     "classificacao": "12",
     "sinopse": "Durante as festas, um patriarca rígido lida com os relacionamentos complicados dos filhos.",
     "avaliacao": 3.5,
-    "generos": [
-      "Comédia",
-      "Família",
-      "Natal"
-    ],
+    "generos": ["Comédia", "Família", "Natal"],
     "emissora": "Netflix",
     "onde_visto": "Netflix",
     "data_cadastro": "2025-06-15 21:02:00",
     "user_status": "Concluída",
     "progresso": 100,
-    "equipe": [
-      {
-        "nome": "Tucker Cawley",
-        "funcao": "Criador"
-      }
-    ],
-    "imagem": "uploads/S114.png"
+    "equipe": [],
+    "imagem": "uploads/S114.png",
+    "favorita": false,
+    "nEpisodios": 8
   },
   {
     "id": "S115",
@@ -787,23 +711,16 @@
     "classificacao": "10",
     "sinopse": "Os órfãos Baudelaire enfrentam o maligno Conde Olaf enquanto tentam desvendar o mistério da morte dos pais.",
     "avaliacao": 4,
-    "generos": [
-      "Aventura",
-      "Mistério",
-      "Drama"
-    ],
+    "generos": ["Aventura", "Mistério", "Drama"],
     "emissora": "Netflix",
     "onde_visto": "Netflix",
     "data_cadastro": "2025-06-15 21:03:00",
     "user_status": "Concluída",
     "progresso": 100,
-    "equipe": [
-      {
-        "nome": "Daniel Handler",
-        "funcao": "Criador"
-      }
-    ],
-    "imagem": "uploads/S115.png"
+    "equipe": [],
+    "imagem": "uploads/S115.png",
+    "favorita": false,
+    "nEpisodios": 25
   },
   {
     "id": "S116",
@@ -817,23 +734,16 @@
     "classificacao": "12",
     "sinopse": "Após morrer, Eleanor Shellstrop acorda no 'Lugar Bom', mas logo percebe que está lá por engano.",
     "avaliacao": 4.5,
-    "generos": [
-      "Comédia",
-      "Filosofia",
-      "Fantasia"
-    ],
+    "generos": ["Comédia", "Filosofia", "Fantasia"],
     "emissora": "NBC",
     "onde_visto": "Netflix",
     "data_cadastro": "2025-06-15 21:04:00",
     "user_status": "Concluída",
     "progresso": 100,
-    "equipe": [
-      {
-        "nome": "Michael Schur",
-        "funcao": "Criador"
-      }
-    ],
-    "imagem": "uploads/S116.png"
+    "equipe": [],
+    "imagem": "uploads/S116.png",
+    "favorita": false,
+    "nEpisodios": 53
   },
   {
     "id": "S117",
@@ -847,23 +757,16 @@
     "classificacao": "14",
     "sinopse": "Dois irmãos gamers são transportados para um mundo onde tudo é decidido por jogos.",
     "avaliacao": 3,
-    "generos": [
-      "Fantasia",
-      "Aventura",
-      "Anime"
-    ],
+    "generos": ["Fantasia", "Aventura", "Anime"],
     "emissora": "AT-X",
     "onde_visto": "Netflix",
     "data_cadastro": "2025-06-15 21:05:00",
     "user_status": "Concluída",
     "progresso": 100,
-    "equipe": [
-      {
-        "nome": "Yuu Kamiya",
-        "funcao": "Criador"
-      }
-    ],
-    "imagem": "uploads/S117.png"
+    "equipe": [],
+    "imagem": "uploads/S117.png",
+    "favorita": false,
+    "nEpisodios": 12
   },
   {
     "id": "S118",
@@ -877,23 +780,16 @@
     "classificacao": "14",
     "sinopse": "Uma jovem bruxa viaja no tempo para escapar da morte e busca uma vida normal no presente.",
     "avaliacao": 4,
-    "generos": [
-      "Fantasia",
-      "Drama",
-      "Romance"
-    ],
+    "generos": ["Fantasia", "Drama", "Romance"],
     "emissora": "Netflix",
     "onde_visto": "Netflix",
     "data_cadastro": "2025-06-15 21:06:00",
     "user_status": "Concluída",
     "progresso": 100,
-    "equipe": [
-      {
-        "nome": "Ana María Parra",
-        "funcao": "Criadora"
-      }
-    ],
-    "imagem": "uploads/S118.png"
+    "equipe": [],
+    "imagem": "uploads/S118.png",
+    "favorita": true,
+    "nEpisodios": 18
   },
   {
     "id": "S119",
@@ -903,27 +799,20 @@
     "ano_encerramento": 2019,
     "pais": "Japão",
     "idioma": "Japonês",
-    "status": "Finalizada",
+    "status": "Em Hiato",
     "classificacao": "16",
     "sinopse": "Em uma escola de elite, os alunos são avaliados por jogos de apostas e manipulação.",
     "avaliacao": 5,
-    "generos": [
-      "Psicológico",
-      "Suspense",
-      "Anime"
-    ],
+    "generos": ["Psicológico", "Suspense", "Anime"],
     "emissora": "MBS",
     "onde_visto": "Netflix",
     "data_cadastro": "2025-06-15 21:13:00",
     "user_status": "Concluída",
     "progresso": 100,
-    "equipe": [
-      {
-        "nome": "Homura Kawamoto",
-        "funcao": "Criador"
-      }
-    ],
-    "imagem": "uploads/S119.png"
+    "equipe": [],
+    "imagem": "uploads/S119.png",
+    "favorita": true,
+    "nEpisodios": 24
   },
   {
     "id": "S120",
@@ -937,27 +826,16 @@
     "classificacao": "12",
     "sinopse": "A juventude de Clark Kent em Smallville antes de se tornar o Superman.",
     "avaliacao": 4.5,
-    "generos": [
-      "Ação",
-      "Ficção Científica",
-      "Drama"
-    ],
+    "generos": ["Ação", "Super-herói", "Drama"],
     "emissora": "The WB / The CW",
     "onde_visto": "Prime Video",
     "data_cadastro": "2025-06-15 21:14:00",
     "user_status": "Concluída",
     "progresso": 100,
-    "equipe": [
-      {
-        "nome": "Alfred Gough",
-        "funcao": "Criador"
-      },
-      {
-        "nome": "Miles Millar",
-        "funcao": "Criador"
-      }
-    ],
-    "imagem": "uploads/S120.png"
+    "equipe": [],
+    "imagem": "uploads/S120.png",
+    "favorita": false,
+    "nEpisodios": 217    
   },
   {
     "id": "S121",
@@ -971,23 +849,16 @@
     "classificacao": "L",
     "sinopse": "Lucky e seu cavalo Spirit vivem grandes aventuras no velho oeste ao lado de amigas inseparáveis.",
     "avaliacao": 3.5,
-    "generos": [
-      "Animação",
-      "Aventura",
-      "Família"
-    ],
+    "generos": ["Animação", "Aventura", "Família"],
     "emissora": "Netflix",
     "onde_visto": "Netflix",
     "data_cadastro": "2025-06-15 21:15:00",
     "user_status": "Concluída",
     "progresso": 100,
-    "equipe": [
-      {
-        "nome": "Aury Wallington",
-        "funcao": "Criadora"
-      }
-    ],
-    "imagem": "uploads/S121.png"
+    "equipe": [],
+    "imagem": "uploads/S121.png",
+    "favorita": false,
+    "nEpisodios": 52
   },
   {
     "id": "S122",
@@ -1001,23 +872,16 @@
     "classificacao": "14",
     "sinopse": "Um detetive falso com habilidades de observação excepcionais resolve crimes enquanto finge ser médium.",
     "avaliacao": 5,
-    "generos": [
-      "Comédia",
-      "Mistério",
-      "Policial"
-    ],
+    "generos": ["Comédia", "Mistério", "Policial"],
     "emissora": "USA Network",
     "onde_visto": "Prime Video",
     "data_cadastro": "2025-06-15 21:16:00",
     "user_status": "Concluída",
     "progresso": 100,
-    "equipe": [
-      {
-        "nome": "Steve Franks",
-        "funcao": "Criador"
-      }
-    ],
-    "imagem": "uploads/S122.png"
+    "equipe": [],
+    "imagem": "uploads/S122.png",
+    "favorita": true,
+    "nEpisodios": 120
   },
   {
     "id": "S123",
@@ -1031,23 +895,16 @@
     "classificacao": "18",
     "sinopse": "Uma dominatrix e seu melhor amigo gay formam uma parceria improvável no mundo do BDSM.",
     "avaliacao": 3.5,
-    "generos": [
-      "Comédia",
-      "Adulto",
-      "Drama"
-    ],
+    "generos": ["Comédia", "Adulto", "Drama"],
     "emissora": "Netflix",
     "onde_visto": "Netflix",
     "data_cadastro": "2025-06-15 21:20:00",
     "user_status": "Concluída",
     "progresso": 100,
-    "equipe": [
-      {
-        "nome": "Rightor Doyle",
-        "funcao": "Criador"
-      }
-    ],
-    "imagem": "uploads/S123.png"
+    "equipe": [],
+    "imagem": "uploads/S123.png",
+    "favorita": false,
+    "nEpisodios": 16
   },
   {
     "id": "S124",
@@ -1061,34 +918,17 @@
     "classificacao": "L",
     "sinopse": "Lizzie enfrenta os desafios da adolescência com a ajuda de seus amigos e uma versão animada de si mesma.",
     "avaliacao": 4,
-    "generos": [
-      "Comédia",
-      "Infantil",
-      "Família"
-    ],
+    "generos": ["Comédia", "Adolescente", "Família"],
     "emissora": "Disney Channel",
     "onde_visto": "Disney+",
     "data_cadastro": "2025-06-15 21:21:00",
     "user_status": "Concluída",
     "progresso": 100,
-    "equipe": [
-      {
-        "nome": "Terri Minsky",
-        "funcao": "Criadora"
-      }
-    ],
-    "imagem": "uploads/S124.png"
+    "equipe": [],
+    "imagem": "uploads/S124.png",
+    "favorita": false,
+    "nEpisodios": 65
   },
-
-
-
-
-
-
-
-
-
-
   {
     "id": "S125",
     "titulo_original": "Arrow",
@@ -1101,31 +941,16 @@
     "classificacao": "14",
     "sinopse": "Após naufrágio em uma ilha, o bilionário Oliver Queen retorna como vigilante arqueiro para proteger Starling City.",
     "avaliacao": 4,
-    "generos": [
-      "Ação",
-      "Drama",
-      "Super-herói"
-    ],
+    "generos": ["Ação","Drama","Super-herói"],
     "emissora": "The CW",
     "onde_visto": "Netflix",
     "data_cadastro": "2025-06-15 21:23:00",
     "user_status": "Concluída",
     "progresso": 100,
-    "equipe": [
-      {
-        "nome": "Greg Berlanti",
-        "funcao": "Criador"
-      },
-      {
-        "nome": "Marc Guggenheim",
-        "funcao": "Criador"
-      },
-      {
-        "nome": "Andrew Kreisberg",
-        "funcao": "Criador"
-      }
-    ],
-    "imagem": "uploads/S125.png"
+    "equipe": [],
+    "imagem": "uploads/S125.png",
+    "favorita": false,
+    "nEpisodios": 170
   },
   {
     "id": "S126",
@@ -1139,23 +964,16 @@
     "classificacao": "14",
     "sinopse": "Wanda e Visão vivem em uma realidade distorcida onde tudo parece uma sitcom clássica — mas há algo errado.",
     "avaliacao": 4.5,
-    "generos": [
-      "Drama",
-      "Mistério",
-      "Super-herói"
-    ],
+    "generos": ["Drama", "Mistério", "Super-herói"],
     "emissora": "Disney+",
     "onde_visto": "Disney+",
     "data_cadastro": "2025-06-15 21:24:00",
     "user_status": "Concluída",
     "progresso": 100,
-    "equipe": [
-      {
-        "nome": "Jac Schaeffer",
-        "funcao": "Criadora"
-      }
-    ],
-    "imagem": "uploads/S126.png"
+    "equipe": [],
+    "imagem": "uploads/S126.png",
+    "favorita": false,
+    "nEpisodios": 9
   },
   {
     "id": "S127",
@@ -1169,23 +987,16 @@
     "classificacao": "18",
     "sinopse": "Uma adolescente se vê presa em um mundo de arranha-céus conectados onde assassinos mascarados caçam vítimas.",
     "avaliacao": 3.5,
-    "generos": [
-      "Terror",
-      "Ação",
-      "Anime"
-    ],
+    "generos": ["Terror", "Ação", "Anime"],
     "emissora": "Netflix",
     "onde_visto": "Netflix",
     "data_cadastro": "2025-06-15 21:25:00",
     "user_status": "Concluída",
     "progresso": 100,
-    "equipe": [
-      {
-        "nome": "Tsuina Miura",
-        "funcao": "Criador"
-      }
-    ],
-    "imagem": "uploads/S127.png"
+    "equipe": [],
+    "imagem": "uploads/S127.png",
+    "favorita": false,
+    "nEpisodios": 12
   },
   {
     "id": "S128",
@@ -1199,23 +1010,16 @@
     "classificacao": "12",
     "sinopse": "Quatro adolescentes voltam de uma excursão escolar e descobrem que estão em uma realidade alternativa onde eles nunca existiram.",
     "avaliacao": 4.0,
-    "generos": [
-      "Ficção científica",
-      "Fantasia",
-      "Aventura"
-    ],
+    "generos": ["Ficção científica", "Fantasia", "Aventura"],
     "emissora": "ABC Me",
     "onde_visto": "GloboPlay",
     "data_cadastro": "2025-06-17 13:30:00",
     "user_status": "Concluída",
     "progresso": 100,
-    "equipe": [
-      {
-        "nome": "Tony Ayres",
-        "funcao": "Criador"
-      }
-    ],
-    "imagem": "uploads/S128.png"
+    "equipe": [],
+    "imagem": "uploads/S128.png",
+    "favorita": false,
+    "nEpisodios": 52
   },
   {
     "id": "S129",
@@ -1229,23 +1033,16 @@
     "classificacao": "10",
     "sinopse": "Uma história de amor em Nova York durante o Natal, onde Dash e Lily trocam desafios e pensamentos por meio de um caderno vermelho.",
     "avaliacao": 3.5,
-    "generos": [
-      "Romance",
-      "Comédia",
-      "Natalino"
-    ],
+    "generos": ["Romance", "Comédia", "Natalino"],
     "emissora": "Netflix",
     "onde_visto": "Netflix",
     "data_cadastro": "2025-06-17 13:32:00",
     "user_status": "Concluída",
     "progresso": 100,
-    "equipe": [
-      {
-        "nome": "Joe Tracz",
-        "funcao": "Criador"
-      }
-    ],
-    "imagem": "uploads/S129.png"
+    "equipe": [],
+    "imagem": "uploads/S129.png",
+    "favorita": false,
+    "nEpisodios": 8
   },
   {
     "id": "S130",
@@ -1259,24 +1056,16 @@
     "classificacao": "12",
     "sinopse": "Saiki Kusuo é um estudante com poderes psíquicos incríveis que tenta viver uma vida normal, apesar de seus colegas excêntricos.",
     "avaliacao": 4.5,
-    "generos": [
-      "Comédia",
-      "Fantasia",
-      "Sobrenatural",
-      "Anime"
-    ],
+    "generos": ["Comédia", "Sobrenatural", "Anime"],
     "emissora": "TV Tokyo",
     "onde_visto": "Netflix",
     "data_cadastro": "2025-06-17 13:34:00",
     "user_status": "Concluída",
     "progresso": 100,
-    "equipe": [
-      {
-        "nome": "Shūichi Asō",
-        "funcao": "Criador"
-      }
-    ],
-    "imagem": "uploads/S130.png"
+    "equipe": [],
+    "imagem": "uploads/S130.png",
+    "favorita": true,
+    "nEpisodios": 120
   },
   {
     "id": "S131",
@@ -1290,24 +1079,16 @@
     "classificacao": "12",
     "sinopse": "Continuação da vida de Saiki Kusuo, com novos episódios exclusivos da Netflix, mantendo o humor e as situações caóticas.",
     "avaliacao": 4.5,
-    "generos": [
-      "Comédia",
-      "Fantasia",
-      "Sobrenatural",
-      "Anime"
-    ],
+    "generos": ["Comédia", "Sobrenatural", "Anime"],
     "emissora": "Netflix",
     "onde_visto": "Netflix",
     "data_cadastro": "2025-06-17 13:36:00",
     "user_status": "Concluída",
     "progresso": 100,
-    "equipe": [
-      {
-        "nome": "Shūichi Asō",
-        "funcao": "Criador"
-      }
-    ],
-    "imagem": "uploads/S131.png"
+    "equipe": [],
+    "imagem": "uploads/S131.png",
+    "favorita": true,
+    "nEpisodios": 6
   },
   {
     "id": "S132",
@@ -1321,22 +1102,16 @@
     "classificacao": "16",
     "sinopse": "Três adolescentes com personalidades diferentes se tornam amigas após se conhecerem em um grupo de apoio para cleptomaníacos.",
     "avaliacao": 3.5,
-    "generos": [
-      "Drama",
-      "Juvenil"
-    ],
+    "generos": ["Drama", "Juvenil", "Adolescente"],
     "emissora": "Netflix",
     "onde_visto": "Netflix",
     "data_cadastro": "2025-06-17 13:22:00",
     "user_status": "Concluída",
     "progresso": 100,
-    "equipe": [
-      {
-        "nome": "Amy Andelson, Emily Meyer, Kirsten Smith",
-        "funcao": "Criadoras"
-      }
-    ],
-    "imagem": "uploads/S132.png"
+    "equipe": [],
+    "imagem": "uploads/S132.png",
+    "favorita": false,
+    "nEpisodios": 20
   },
   {
     "id": "S133",
@@ -1350,23 +1125,16 @@
     "classificacao": "14",
     "sinopse": "Em um mundo onde mutantes são perseguidos, uma família foge após descobrir que seus filhos têm habilidades extraordinárias.",
     "avaliacao": 4,
-    "generos": [
-      "Ação",
-      "Ficção científica",
-      "Super-herói"
-    ],
+    "generos": ["Ação", "Ficção científica", "Super-herói"],
     "emissora": "FOX",
     "onde_visto": "GloboPlay",
     "data_cadastro": "2025-06-17 13:24:00",
     "user_status": "Concluída",
     "progresso": 100,
-    "equipe": [
-      {
-        "nome": "Matt Nix",
-        "funcao": "Criador"
-      }
-    ],
-    "imagem": "uploads/S133.png"
+    "equipe": [],
+    "imagem": "uploads/S133.png",
+    "favorita": false,
+    "nEpisodios": 29
   },
   {
     "id": "S134",
@@ -1379,24 +1147,17 @@
     "status": "Finalizada",
     "classificacao": "16",
     "sinopse": "Um homem gay com paralisia cerebral decide reescrever sua identidade e perseguir a vida que sempre quis.",
-    "avaliacao": 3.8,
-    "generos": [
-      "Comédia",
-      "Drama",
-      "LGBTQIA+"
-    ],
+    "avaliacao": 3.5,
+    "generos": ["Comédia", "Drama", "LGBTQIA+"],
     "emissora": "Netflix",
     "onde_visto": "Netflix",
     "data_cadastro": "2025-06-19 22:17:00",
     "user_status": "Concluída",
     "progresso": 100,
-    "equipe": [
-      {
-        "nome": "Ryan O'Connell",
-        "funcao": "Criador"
-      }
-    ],
-    "imagem": "uploads/S134.png"
+    "equipe": [],
+    "imagem": "uploads/S134.png",
+    "favorita": false,
+    "nEpisodios": 16
   },
   {
     "id": "S135",
@@ -1410,23 +1171,16 @@
     "classificacao": "14",
     "sinopse": "Após um surto mortal matar todos com mais de 21 anos, os jovens de uma cidade são colocados em quarentena e precisam sobreviver sozinhos.",
     "avaliacao": 3.5,
-    "generos": [
-      "Ficção científica",
-      "Drama",
-      "Mistério"
-    ],
+    "generos": ["Ficção científica", "Drama", "Mistério"],
     "emissora": "City / Netflix",
     "onde_visto": "Netflix",
     "data_cadastro": "2025-06-19 22:18:00",
     "user_status": "Concluída",
     "progresso": 100,
-    "equipe": [
-      {
-        "nome": "Michael McGowan",
-        "funcao": "Criador"
-      }
-    ],
-    "imagem": "uploads/S135.png"
+    "equipe": [],
+    "imagem": "uploads/S135.png",
+    "favorita": false,
+    "nEpisodios": 12
   },
   {
     "id": "S136",
@@ -1436,31 +1190,20 @@
     "ano_encerramento": 2019,
     "pais": "Reino Unido",
     "idioma": "Inglês",
-    "status": "Finalizada",
+    "status": "Cancelada",
     "classificacao": "16",
     "sinopse": "Um adolescente psicopata e uma garota rebelde fogem juntos em uma jornada imprevisível e sombria.",
     "avaliacao": 4.5,
-    "generos": [
-      "Drama",
-      "Comédia",
-      "Crime"
-    ],
+    "generos": ["Drama", "Comédia", "Crime"],
     "emissora": "Channel 4 / Netflix",
     "onde_visto": "Netflix",
     "data_cadastro": "2025-06-19 22:19:00",
     "user_status": "Concluída",
     "progresso": 100,
-    "equipe": [
-      {
-        "nome": "Jonathan Entwistle",
-        "funcao": "Criador"
-      },
-      {
-        "nome": "Lucy Tcherniak",
-        "funcao": "Diretora"
-      }
-    ],
-    "imagem": "uploads/S136.png"
+    "equipe": [],
+    "imagem": "uploads/S136.png",
+    "favorita": false,
+    "nEpisodios": 16
   },
   {
     "id": "S137",
@@ -1474,27 +1217,16 @@
     "classificacao": "16",
     "sinopse": "Uma adolescente lida com os dramas do ensino médio e com seus recém-descobertos poderes telecinéticos.",
     "avaliacao": 4.0,
-    "generos": [
-      "Fantasia",
-      "Drama",
-      "Adolescente"
-    ],
+    "generos": ["Fantasia", "Drama", "Adolescente"],
     "emissora": "Netflix",
     "onde_visto": "Netflix",
     "data_cadastro": "2025-06-19 22:20:00",
     "user_status": "Concluída",
     "progresso": 100,
-    "equipe": [
-      {
-        "nome": "Jonathan Entwistle",
-        "funcao": "Criador"
-      },
-      {
-        "nome": "Christy Hall",
-        "funcao": "Criadora"
-      }
-    ],
-    "imagem": "uploads/S137.png"
+    "equipe": [],
+    "imagem": "uploads/S137.png",
+    "favorita": false,
+    "nEpisodios": 7
   },
   {
     "id": "S138",
@@ -1508,27 +1240,16 @@
     "classificacao": "16",
     "sinopse": "Após desaparecer por sete anos, uma jovem cega retorna com a visão restaurada e habilidades misteriosas.",
     "avaliacao": 4,
-    "generos": [
-      "Ficção científica",
-      "Drama",
-      "Fantasia"
-    ],
+    "generos": ["Ficção científica", "Drama", "Fantasia"],
     "emissora": "Netflix",
     "onde_visto": "Netflix",
     "data_cadastro": "2025-06-19 22:21:00",
     "user_status": "Concluída",
     "progresso": 100,
-    "equipe": [
-      {
-        "nome": "Brit Marling",
-        "funcao": "Criadora"
-      },
-      {
-        "nome": "Zal Batmanglij",
-        "funcao": "Criador"
-      }
-    ],
-    "imagem": "uploads/S138.png"
+    "equipe": [],
+    "imagem": "uploads/S138.png",
+    "favorita": false,
+    "nEpisodios": 16
   },
   {
     "id": "S139",
@@ -1542,23 +1263,16 @@
     "classificacao": "10",
     "sinopse": "Tori Vega entra para uma escola de artes e descobre seus talentos enquanto lida com os dramas da adolescência.",
     "avaliacao": 4,
-    "generos": [
-      "Comédia",
-      "Musical",
-      "Adolescente"
-    ],
+    "generos": ["Comédia", "Musical", "Adolescente"],
     "emissora": "Nickelodeon",
     "onde_visto": "Paramount+",
     "data_cadastro": "2025-06-19 22:22:00",
     "user_status": "Concluída",
     "progresso": 100,
-    "equipe": [
-      {
-        "nome": "Dan Schneider",
-        "funcao": "Criador"
-      }
-    ],
-    "imagem": "uploads/S139.png"
+    "equipe": [],
+    "imagem": "uploads/S139.png",
+    "favorita": false,
+    "nEpisodios": 60
   },
   {
     "id": "S140",
@@ -1572,27 +1286,16 @@
     "classificacao": "14",
     "sinopse": "Um nerd de tecnologia tem dados secretos do governo inseridos em seu cérebro e vira espião por acidente.",
     "avaliacao": 4.5,
-    "generos": [
-      "Ação",
-      "Comédia",
-      "Espionagem"
-    ],
+    "generos": ["Ação", "Comédia", "Espionagem"],
     "emissora": "NBC",
     "onde_visto": "GloboPlay",
     "data_cadastro": "2025-06-19 22:23:00",
     "user_status": "Concluída",
     "progresso": 100,
-    "equipe": [
-      {
-        "nome": "Josh Schwartz",
-        "funcao": "Criador"
-      },
-      {
-        "nome": "Chris Fedak",
-        "funcao": "Criador"
-      }
-    ],
-    "imagem": "uploads/S140.png"
+    "equipe": [],
+    "imagem": "uploads/S140.png",
+    "favorita": true,
+    "nEpisodios": 91
   },
   {
     "id": "S141",
@@ -1606,23 +1309,16 @@
     "classificacao": "14",
     "sinopse": "Pessoas comuns descobrem que têm habilidades extraordinárias e precisam salvar o mundo de uma catástrofe iminente.",
     "avaliacao": 4.0,
-    "generos": [
-      "Ficção científica",
-      "Drama",
-      "Super-herói"
-    ],
+    "generos": ["Ficção científica", "Drama", "Super-herói"],
     "emissora": "NBC",
     "onde_visto": "Prime Video",
     "data_cadastro": "2025-06-19 22:24:00",
     "user_status": "Concluída",
     "progresso": 100,
-    "equipe": [
-      {
-        "nome": "Tim Kring",
-        "funcao": "Criador"
-      }
-    ],
-    "imagem": "uploads/S141.png"
+    "equipe": [],
+    "imagem": "uploads/S141.png",
+    "favorita": true,
+    "nEpisodios": 77
   },
   {
     "id": "S142",
@@ -1635,28 +1331,17 @@
     "status": "Finalizada",
     "classificacao": "12",
     "sinopse": "Um grupo de adolescentes em um acampamento de verão descobre mistérios sombrios e forças sobrenaturais na ilha.",
-    "avaliacao": 3.6,
-    "generos": [
-      "Drama",
-      "Mistério",
-      "Fantasia"
-    ],
+    "avaliacao": 4,
+    "generos": ["Drama", "Mistério", "Fantasia"],
     "emissora": "BBC / Netflix",
     "onde_visto": "Netflix",
     "data_cadastro": "2025-06-19 22:25:00",
     "user_status": "Concluída",
     "progresso": 100,
-    "equipe": [
-      {
-        "nome": "Dan Berlinka",
-        "funcao": "Criador"
-      },
-      {
-        "nome": "Nina Metivier",
-        "funcao": "Criadora"
-      }
-    ],
-    "imagem": "uploads/S142.png"
+    "equipe": [],
+    "imagem": "uploads/S142.png",
+    "favorita": true,
+    "nEpisodios": 26
   },
   {
     "id": "S143",
@@ -1669,28 +1354,17 @@
     "status": "Finalizada",
     "classificacao": "L",
     "sinopse": "Três adolescentes levam uma vida dupla como espiãs internacionais em missões perigosas para salvar o mundo.",
-    "avaliacao": 4.4,
-    "generos": [
-      "Animação",
-      "Ação",
-      "Comédia"
-    ],
+    "avaliacao": 4,
+    "generos": ["Animação", "Ação", "Comédia"],
     "emissora": "TF1",
     "onde_visto": "Prime Video",
     "data_cadastro": "2025-06-19 22:26:00",
     "user_status": "Concluída",
     "progresso": 100,
-    "equipe": [
-      {
-        "nome": "Vincent Chalvon-Demersay",
-        "funcao": "Criador"
-      },
-      {
-        "nome": "David Michel",
-        "funcao": "Criador"
-      }
-    ],
-    "imagem": "uploads/S143.png"
+    "equipe": [],
+    "imagem": "uploads/S143.png",
+    "favorita": false,
+    "nEpisodios": 156
   },
   {
     "id": "S144",
@@ -1703,28 +1377,17 @@
     "status": "Finalizada",
     "classificacao": "L",
     "sinopse": "As espiãs enfrentam novas ameaças em missões atualizadas durante a sexta temporada da série animada.",
-    "avaliacao": 4.2,
-    "generos": [
-      "Animação",
-      "Ação",
-      "Comédia"
-    ],
+    "avaliacao": 3.5,
+    "generos": ["Animação", "Ação", "Comédia"],
     "emissora": "TF1",
     "onde_visto": "Prime Video",
     "data_cadastro": "2025-06-19 22:27:00",
     "user_status": "Concluída",
     "progresso": 100,
-    "equipe": [
-      {
-        "nome": "Vincent Chalvon-Demersay",
-        "funcao": "Criador"
-      },
-      {
-        "nome": "David Michel",
-        "funcao": "Criador"
-      }
-    ],
-    "imagem": "uploads/S144.png"
+    "equipe": [],
+    "imagem": "uploads/S144.png",
+    "favorita": false,
+    "nEpisodios": 26
   },
 
 
@@ -1875,7 +1538,7 @@
     "ano_encerramento": 2020,
     "pais": "Estados Unidos",
     "idioma": "Inglês",
-    "status": "Minissérie",
+    "status": "Finalizada",
     "classificacao": "L",
     "sinopse": "Lucky e suas amigas iniciam uma nova aventura em uma academia de equitação longe de casa.",
     "avaliacao": 3.8,
@@ -1945,7 +1608,7 @@
     "emissora": "TV Globo",
     "onde_visto": "GloboPlay",
     "data_cadastro": "2025-06-19 22:45:00",
-    "user_status": "Assistido",
+    "user_status": "Concluída",
     "progresso": 100,
     "equipe": [
       {
@@ -1979,7 +1642,7 @@
     "emissora": "ABC",
     "onde_visto": "Disney+",
     "data_cadastro": "2025-06-19 22:46:00",
-    "user_status": "Assistido",
+    "user_status": "Concluída",
     "progresso": 100,
     "equipe": [
       {
@@ -2013,7 +1676,7 @@
     "emissora": "Netflix",
     "onde_visto": "Netflix",
     "data_cadastro": "2025-06-19 22:47:00",
-    "user_status": "Assistido",
+    "user_status": "Concluída",
     "progresso": 100,
     "equipe": [
       {
@@ -2043,7 +1706,7 @@
     "emissora": "Nickelodeon",
     "onde_visto": "Paramount+",
     "data_cadastro": "2025-06-19 22:48:00",
-    "user_status": "Assistido",
+    "user_status": "Concluída",
     "progresso": 100,
     "equipe": [
       {
@@ -2065,7 +1728,7 @@
     "ano_encerramento": 2018,
     "pais": "Estados Unidos",
     "idioma": "Inglês",
-    "status": "Minissérie",
+    "status": "Finalizada",
     "classificacao": "18",
     "sinopse": "Dois estranhos se conectam durante um experimento farmacêutico que promete resolver todos os problemas mentais.",
     "avaliacao": 4.1,
@@ -2077,7 +1740,7 @@
     "emissora": "Netflix",
     "onde_visto": "Netflix",
     "data_cadastro": "2025-06-19 22:49:00",
-    "user_status": "Assistido",
+    "user_status": "Concluída",
     "progresso": 100,
     "equipe": [
       {
@@ -2088,7 +1751,7 @@
     "imagem": "uploads/S155.png"
   },
   {
-    "id": "S056",
+    "id": "S156",
     "titulo_original": "Steven Universe",
     "titulo": "Steven Universe",
     "ano_lancamento": 2013,
@@ -2105,9 +1768,9 @@
       "Aventura"
     ],
     "emissora": "Cartoon Network",
-    "onde_visto": "HBO MAX",
+    "onde_visto": "HBOMAX",
     "data_cadastro": "2025-06-19 22:53:00",
-    "user_status": "Assistido",
+    "user_status": "Concluída",
     "progresso": 100,
     "equipe": [
       {
@@ -2118,7 +1781,7 @@
     "imagem": "uploads/S156.png"
   },
   {
-    "id": "S058",
+    "id": "S157",
     "titulo_original": "Kyle XY",
     "titulo": "Kyle XY",
     "ano_lancamento": 2006,
@@ -2135,9 +1798,9 @@
       "Drama"
     ],
     "emissora": "ABC Family",
-    "onde_visto": "Star+",
+    "onde_visto": "Disney+",
     "data_cadastro": "2025-06-19 22:55:00",
-    "user_status": "Assistido",
+    "user_status": "Concluída",
     "progresso": 100,
     "equipe": [
       {
@@ -2149,10 +1812,10 @@
         "funcao": "Criador"
       }
     ],
-    "imagem": "uploads/S058.png"
+    "imagem": "uploads/S157.png"
   },
   {
-    "id": "S057",
+    "id": "S158",
     "titulo_original": "Steven Universe Future",
     "titulo": "Steven Universe Future",
     "ano_lancamento": 2019,
@@ -2169,9 +1832,9 @@
       "Slice of Life"
     ],
     "emissora": "Cartoon Network",
-    "onde_visto": "HBO MAX",
+    "onde_visto": "HBOMAX",
     "data_cadastro": "2025-06-19 22:54:00",
-    "user_status": "Assistido",
+    "user_status": "Concluída",
     "progresso": 100,
     "equipe": [
       {
@@ -2179,11 +1842,11 @@
         "funcao": "Criadora"
       }
     ],
-    "imagem": "uploads/S057.png"
+    "imagem": "uploads/S158.png"
   },
 
   {
-  "id": "S051",
+  "id": "S159",
   "titulo_original": "Rita",
   "titulo": "Rita",
   "ano_lancamento": 2012,
@@ -2201,12 +1864,12 @@
   "user_status": "Concluída",
   "progresso": 100,
   "equipe": [],
-  "imagem": "uploads/S051.png",
+  "imagem": "uploads/S159.png",
   "favorita": false,
   "nEpisodios": 40
 },
 {
-  "id": "S052",
+  "id": "S160",
   "titulo_original": "Glitch",
   "titulo": "Glitch",
   "ano_lancamento": 2015,
@@ -2224,12 +1887,12 @@
   "user_status": "Concluída",
   "progresso": 100,
   "equipe": [],
-  "imagem": "uploads/S052.png",
+  "imagem": "uploads/S160.png",
   "favorita": false,
   "nEpisodios": 18
 },
 {
-  "id": "S053",
+  "id": "S161",
   "titulo_original": "Veronica Mars",
   "titulo": "Veronica Mars",
   "ano_lancamento": 2004,
@@ -2242,40 +1905,40 @@
   "avaliacao": 4.2,
   "generos": ["Mistério", "Drama", "Crime"],
   "emissora": "UPN / The CW",
-  "onde_visto": "Prime Video",
+  "onde_visto": "HBOMAX",
   "data_cadastro": "2025-06-23 19:00:00",
   "user_status": "Concluída",
   "progresso": 100,
   "equipe": [],
-  "imagem": "uploads/S053.png",
+  "imagem": "uploads/S161.png",
   "favorita": false,
   "nEpisodios": 64
 },
 {
-  "id": "S054",
+  "id": "S162",
   "titulo_original": "Veronica Mars (2019)",
-  "titulo": "Veronica Mars (2021)",
+  "titulo": "Veronica Mars (2019)",
   "ano_lancamento": 2019,
   "ano_encerramento": 2019,
   "pais": "Estados Unidos",
   "idioma": "Inglês",
-  "status": "Minissérie",
+  "status": "Finalizada",
   "classificacao": "16",
   "sinopse": "Veronica Mars retorna para uma nova investigação após uma série de atentados atingir sua cidade natal.",
   "avaliacao": 3.8,
   "generos": ["Suspense", "Policial", "Drama"],
   "emissora": "Hulu",
-  "onde_visto": "Star+",
+  "onde_visto": "HBOMAX",
   "data_cadastro": "2025-06-23 19:00:00",
   "user_status": "Concluída",
   "progresso": 100,
   "equipe": [],
-  "imagem": "uploads/S054.png",
+  "imagem": "uploads/S162.png",
   "favorita": false,
   "nEpisodios": 8
 },
 {
-  "id": "S055",
+  "id": "S163",
   "titulo_original": "The Kominsky Method",
   "titulo": "O Método Kominsky",
   "ano_lancamento": 2018,
@@ -2293,12 +1956,12 @@
   "user_status": "Concluída",
   "progresso": 100,
   "equipe": [],
-  "imagem": "uploads/S055.png",
+  "imagem": "uploads/S163.png",
   "favorita": false,
   "nEpisodios": 22
 },
 {
-  "id": "S056",
+  "id": "S164",
   "titulo_original": "Chilling Adventures of Sabrina",
   "titulo": "O Mundo Sombrio de Sabrina",
   "ano_lancamento": 2018,
@@ -2316,7 +1979,7 @@
   "user_status": "Concluída",
   "progresso": 100,
   "equipe": [],
-  "imagem": "uploads/S056.png",
+  "imagem": "uploads/S164.png",
   "favorita": false,
   "nEpisodios": 36
 },
@@ -2334,7 +1997,7 @@
   "avaliacao": 4.5,
   "generos": ["Animação", "Comédia", "Infantil"],
   "emissora": "Cartoon Network",
-  "onde_visto": "HBO MAX",
+  "onde_visto": "HBOMAX",
   "data_cadastro": "2025-06-23 19:00:00",
   "user_status": "Concluída",
   "progresso": 100,
@@ -2351,13 +2014,13 @@
   "ano_encerramento": 2019,
   "pais": "Reino Unido",
   "idioma": "Inglês",
-  "status": "Minissérie",
+  "status": "Finalizada",
   "classificacao": "L",
   "sinopse": "Darwin revisita os melhores momentos da escola de Elmore enquanto monta o anuário escolar.",
   "avaliacao": 4.0,
   "generos": ["Animação", "Comédia", "Curta"],
   "emissora": "Cartoon Network",
-  "onde_visto": "HBO MAX",
+  "onde_visto": "HBOMAX",
   "data_cadastro": "2025-06-23 19:00:00",
   "user_status": "Concluída",
   "progresso": 100,
@@ -2380,7 +2043,7 @@
   "avaliacao": 3.9,
   "generos": ["Animação", "Comédia", "Curta"],
   "emissora": "Cartoon Network",
-  "onde_visto": "HBO MAX",
+  "onde_visto": "HBOMAX",
   "data_cadastro": "2025-06-23 19:00:00",
   "user_status": "Concluída",
   "progresso": 100,
@@ -2411,5 +2074,143 @@
   "imagem": "uploads/S060.png",
   "favorita": false,
   "nEpisodios": 52
+},
+{
+  "id": "S061",
+  "titulo_original": "Plan Coeur",
+  "titulo": "The Hook Up Plan",
+  "ano_lancamento": 2018,
+  "ano_encerramento": 2022,
+  "pais": "França",
+  "idioma": "Francês",
+  "status": "Finalizada",
+  "classificacao": "16",
+  "sinopse": "Em Paris, duas amigas contratam um acompanhante para ajudar Elsa a superar o término com seu ex, mas o plano sai do controle.",
+  "avaliacao": 3.7,
+  "generos": ["Comédia", "Romance", "Drama"],
+  "emissora": "Netflix",
+  "onde_visto": "Netflix",
+  "data_cadastro": "2025-06-23 19:20:00",
+  "user_status": "Concluída",
+  "progresso": 100,
+  "equipe": [],
+  "imagem": "uploads/S061.png",
+  "favorita": false,
+  "nEpisodios": 21
+},
+{
+  "id": "S062",
+  "titulo_original": "How to Get Away with Murder",
+  "titulo": "How to Get Away with Murder",
+  "ano_lancamento": 2014,
+  "ano_encerramento": 2020,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "status": "Finalizada",
+  "classificacao": "16",
+  "sinopse": "Uma brilhante professora de direito e cinco de seus alunos se envolvem em uma complexa trama de assassinato e segredos.",
+  "avaliacao": 4.5,
+  "generos": ["Drama", "Suspense", "Crime"],
+  "emissora": "ABC",
+  "onde_visto": "Netflix",
+  "data_cadastro": "2025-06-23 19:20:00",
+  "user_status": "Concluída",
+  "progresso": 100,
+  "equipe": [],
+  "imagem": "uploads/S062.png",
+  "favorita": false,
+  "nEpisodios": 90
+},
+{
+  "id": "S063",
+  "titulo_original": "My Wife and Kids",
+  "titulo": "Eu, a Patroa e as Crianças",
+  "ano_lancamento": 2001,
+  "ano_encerramento": 2005,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "status": "Finalizada",
+  "classificacao": "L",
+  "sinopse": "Michael Kyle é um pai moderno e bem-humorado que tenta educar seus três filhos com métodos pouco convencionais.",
+  "avaliacao": 4.3,
+  "generos": ["Comédia", "Família", "Sitcom"],
+  "emissora": "ABC",
+  "onde_visto": "GloboPlay",
+  "data_cadastro": "2025-06-23 19:20:00",
+  "user_status": "Concluída",
+  "progresso": 100,
+  "equipe": [],
+  "imagem": "uploads/S063.png",
+  "favorita": false,
+  "nEpisodios": 123
+},
+{
+  "id": "S064",
+  "titulo_original": "Jessie",
+  "titulo": "Jessie",
+  "ano_lancamento": 2011,
+  "ano_encerramento": 2015,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "status": "Finalizada",
+  "classificacao": "10",
+  "sinopse": "Jessie é uma jovem do Texas que se muda para Nova York e se torna babá de quatro crianças travessas de uma família rica.",
+  "avaliacao": 3.8,
+  "generos": ["Comédia", "Família", "Infantil"],
+  "emissora": "Disney Channel",
+  "onde_visto": "Disney+",
+  "data_cadastro": "2025-06-23 19:30:00",
+  "user_status": "Concluída",
+  "progresso": 100,
+  "equipe": [],
+  "imagem": "uploads/S064.png",
+  "favorita": false,
+  "nEpisodios": 98
+},
+{
+  "id": "S065",
+  "titulo_original": "Wizards of Waverly Place",
+  "titulo": "Os Feiticeiros de Waverly Place",
+  "ano_lancamento": 2007,
+  "ano_encerramento": 2012,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "status": "Finalizada",
+  "classificacao": "L",
+  "sinopse": "Em uma família de feiticeiros, três irmãos disputam quem herdará os poderes mágicos enquanto vivem aventuras em Nova York.",
+  "avaliacao": 4.1,
+  "generos": ["Fantasia", "Comédia", "Infantil"],
+  "emissora": "Disney Channel",
+  "onde_visto": "Disney+",
+  "data_cadastro": "2025-06-23 19:30:00",
+  "user_status": "Concluída",
+  "progresso": 100,
+  "equipe": [],
+  "imagem": "uploads/S065.png",
+  "favorita": false,
+  "nEpisodios": 106
+},
+{
+  "id": "S066",
+  "titulo_original": "Good Girls",
+  "titulo": "Good Girls",
+  "ano_lancamento": 2018,
+  "ano_encerramento": 2021,
+  "pais": "Estados Unidos",
+  "idioma": "Inglês",
+  "status": "Finalizada",
+  "classificacao": "16",
+  "sinopse": "Três mães desesperadas se envolvem em atividades criminosas após cometerem um assalto para resolver problemas financeiros.",
+  "avaliacao": 4.0,
+  "generos": ["Drama", "Crime", "Comédia"],
+  "emissora": "NBC",
+  "onde_visto": "Netflix",
+  "data_cadastro": "2025-06-23 19:30:00",
+  "user_status": "Concluída",
+  "progresso": 100,
+  "equipe": [],
+  "imagem": "uploads/S066.png",
+  "favorita": false,
+  "nEpisodios": 50
 }
 ]
