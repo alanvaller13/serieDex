@@ -49,16 +49,17 @@ function getSerieStatusColor($status) {
 // Função para obter ícone do streaming
 function getStreamingIcon($ondeVisto) {
     $icons = [
-        "Tv" => "1.png",
-        'Web' => "2.png",
-        'Netflix' => 'netflix.png',
-        'Prime Video' => 'prime-video.png',
-        'GloboPlay' => 'globoplay.png',
-        'Disney+' => 'disneymais.png',
-        'HBO MAX' => 'hbomax.png',
-        'Apple TV+' => 'apple.png',
-        'Paramount+' => 'paramountmais.png',
-        'Crunchyroll' => 'crunchyroll.png'
+        'Tv' => '1.png',
+        'Web' => '2.png',
+        'Netflix' => '3.png',
+        'PrimeVideo' => '4.png',
+        'GloboPlay' => '5.png',
+        'DisneyPlus' => '6.png',
+        'Disney+' => '6.png', // alternativa
+        'ParamountPlus' => '7.png',
+        'Paramount+' => '7.png', // alternativa
+        'HBO MAX' => '8.png',
+        'PlutoTV' => '9.png'
     ];
     
     return $icons[$ondeVisto] ?? 'default.png';
@@ -66,7 +67,7 @@ function getStreamingIcon($ondeVisto) {
 
 // Definir BASE_URL se não estiver definida
 if (!defined('BASE_URL')) {
-    define('BASE_URL', 'https://dexseries.onrender.com/');
+    define('BASE_URL', 'http://localhost/dexSeries');
 }
 
 // Exibir mensagens de feedback
@@ -87,6 +88,13 @@ if (isset($_GET['error'])) {
     if (isset($errors[$_GET['error']])) {
         echo '<div class="alert alert-danger">' . htmlspecialchars($errors[$_GET['error']]) . '</div>';
     }
+}
+    // Função para truncar texto
+function truncarTexto($texto, $limite = 20) {
+    if (strlen($texto) > $limite) {
+        return substr($texto, 0, $limite) . "...";
+    }
+    return $texto;
 }
 ?>
 <!DOCTYPE html>
@@ -738,8 +746,8 @@ if (isset($_GET['error'])) {
             </div>
         </div>
         <div class="serie-info">
-            <h4><?= $serie['titulo'] ?></h4>
-            <div> 
+              <h4><?= truncarTexto($serie['titulo'], 20) ?></h4>
+        <div>
                 <span class="serie-status" style="background-color: <?= getSerieStatusColor($serie['status']) ?>">
                     <?= $serie['status'] ?>
                 </span>
