@@ -110,7 +110,7 @@ function truncarTexto($texto, $limite = 20) {
     /* ============================================= */
     :root {
     :root {
-        --primary-gradient: linear-gradient(135deg, #43A047 0%, #1B5E20 100%);
+        --primary-gradient: linear-gradient(135deg,rgb(70, 181, 70) 0%,rgb(10, 230, 35) 100%);
         --primary-color: #43A047;
         --primary-dark: #1B5E20;
         --secondary-color: #e50914;
