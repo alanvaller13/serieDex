@@ -1,3 +1,4 @@
+faça o mesmo que vc fez com o detalhes, mas para a index.php
 <?php
 // Configurações e funções
 function loadJsonData($file) {
@@ -109,20 +110,16 @@ function truncarTexto($texto, $limite = 20) {
     /* ============== GLOBAL STYLES ================ */
     /* ============================================= */
     :root {
-    :root {
-        --primary-gradient: linear-gradient(135deg,rgb(70, 181, 70) 0%,rgb(10, 230, 35) 100%);
-        --primary-color: #43A047;
-        --primary-dark: #1B5E20;
-        --secondary-color: #e50914;
-        --bg-color: rgb(96, 105, 114);
-        --card-bg: rgba(255, 255, 255, 0.95);
-        --text-dark: #2c3e50;
-        --text-medium: #495057;
-        --text-light: #f8f9fa;
-        --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12);
-        --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.16);
-        --shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.19);
-        --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      --primary-color: #4CAF50;
+      --primary-dark: #2E7D32;
+      --secondary-color: #e50914;
+      --dark-bg: #2c3e50;
+      --darker-bg: #1a1a2e;
+      --text-dark: #212529;
+      --text-medium: #495057;
+      --text-light: #f5f5f1;
+      --card-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+      --card-shadow-hover: 0 12px 28px rgba(0, 0, 0, 0.12);
     }
 
     * {
@@ -546,30 +543,19 @@ function truncarTexto($texto, $limite = 20) {
       color: gold;
     }
 
-    .progress-container {
-        margin: 12px 0;
+    .progresso {
+      height: 6px;
+      background: #f0f0f0;
+      border-radius: 3px;
+      margin: 12px 0 16px;
+      overflow: hidden;
     }
 
-    .progress-label {
-        display: flex;
-        justify-content: space-between;
-        font-size: 0.8rem;
-        color: var(--text-medium);
-        margin-bottom: 4px;
-    }
-
-    .progress-bar {
-        height: 6px;
-        background: #f0f0f0;
-        border-radius: 3px;
-        overflow: hidden;
-    }
-
-    .progress-fill {
-        height: 100%;
-        background: var(--primary-gradient);
-        border-radius: 3px;
-        transition: width 0.6s ease;
+    .barra {
+      height: 100%;
+      background: linear-gradient(90deg, var(--secondary-color), #ff6b6b);
+      border-radius: 3px;
+      transition: width 0.6s ease;
     }
 
     .status-badge {
@@ -792,16 +778,9 @@ function truncarTexto($texto, $limite = 20) {
                 echo str_repeat('<i class="bi bi-star"></i>', $estrelasVazias);
                 ?>
             </div>
-                <div class="progress-container">
-                    <div class="progress-label">
-                        <span><?= $serie['progresso'] ?? 0 ?>%</span>
-                        <span><?= $serie['nEpisodios'] ?? 0 ?> eps</span>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: <?= $serie['progresso'] ?? 0 ?>%"></div>
-                    </div>
-                </div>
-                
+            <div class="progresso">
+                <div class="barra" style="width: <?= $serie['progresso'] ?? 0 ?>%"></div>
+            </div>
             <div class="status-badge" style="background-color: <?= getStatusColor($serie['user_status'] ?? 'Não assistido') ?>">
                 <?= $serie['user_status'] ?? 'Não assistido' ?>
             </div>
@@ -923,3 +902,146 @@ function handleUserAction(event, serieId) {
 </footer>
 </body>
 </html>
+
+e para load_series.php
+<?php
+// Definir BASE_URL se não estiver definida
+if (!defined('BASE_URL')) {
+    define('BASE_URL', 'http://localhost/dexSeries');
+}
+
+function loadJsonData($file) {
+    $path = __DIR__ . '/data/' . $file;
+    if (!file_exists($path)) {
+        return [];
+    }
+
+    $content = file_get_contents($path);
+    $data = json_decode($content, true);
+    return is_array($data) ? $data : [];
+}
+
+// Função para obter cor do status da série
+function getSerieStatusColor($status) {
+    switch ($status) {
+        case 'Em Exibição': return '#4CAF50';
+        case 'Finalizada': return '#2196F3';
+        case 'Cancelada': return '#F44336';
+        case 'Renovada': return '#FFC107';
+        case 'Em Hiato': return '#FF9800';
+        default: return '#666666';
+    }
+}
+
+// Função para obter ícone do streaming
+function getStreamingIcon($ondeVisto) {
+    $icons = [
+        'Tv' => '1.png',
+        'Web' => '2.png',
+        'Netflix' => '3.png',
+        'PrimeVideo' => '4.png',
+        'GloboPlay' => '5.png',
+        'DisneyPlus' => '6.png',
+        'Disney+' => '6.png', // alternativa
+        'ParamountPlus' => '7.png',
+        'Paramount+' => '7.png', // alternativa
+        'HBO MAX' => '8.png',
+        'PlutoTV' => '9.png'
+    ];
+    
+    return $icons[$ondeVisto] ?? 'default.png';
+}
+
+// Função para obter cor do status
+function getStatusColor($status) {
+    switch ($status) {
+        case 'Não assistido': return '#666666';
+        case 'Assistindo': return '#2196F3';
+        case 'Concluída': return '#4CAF50';
+        case 'Pausado': return '#FF9800';
+        case 'Abandonado': return '#F44336';
+        case 'Em Dia': return '#FFC107';
+        default: return '#666666';
+    }
+}
+
+$series = loadJsonData('series.json');
+$seriesPorPagina = 4;
+$paginaAtual = isset($_GET['page']) ? (int)$_GET['page'] : 1;
+$offset = ($paginaAtual - 1) * $seriesPorPagina;
+$seriesPaginadas = array_slice($series, $offset, $seriesPorPagina);
+
+foreach ($seriesPaginadas as $serie): ?>
+<div class="serie-card" 
+     data-status="<?= strtolower(str_replace(' ', '-', $serie['status'])) ?>"
+     data-user-status="<?= strtolower(str_replace(' ', '-', $serie['user_status'] ?? 'nao-assistido')) ?>">
+    <div class="serie-image">
+        <img src="<?= BASE_URL . '/' . $serie['imagem'] ?>" alt="<?= $serie['titulo'] ?>">
+        <?php if (!empty($serie['onde_visto'])): ?>
+        <div class="streaming-icon" title="<?= $serie['onde_visto'] ?>">
+            <img src="<?= BASE_URL ?>/assets/icons/<?= getStreamingIcon($serie['onde_visto']) ?>" alt="<?= $serie['onde_visto'] ?>">
+        </div>
+        <?php endif; ?>
+        
+        <?php if (isset($serie['favorita']) && $serie['favorita']): ?>
+        <div class="favorite-icon" title="Série favorita">
+            <i class="bi bi-star-fill"></i>
+        </div>
+        <?php endif; ?>
+        
+        <div class="card-actions">
+            <a href="series/editarTv.php?id=<?= $serie['id'] ?>" class="card-action" title="Editar">
+                <i class="bi bi-pencil"></i>
+            </a>
+            <a href="series/excluirTv.php?id=<?= $serie['id'] ?>" class="card-action" title="Excluir" onclick="return confirm('Tem certeza que deseja excluir esta série?')">
+                <i class="bi bi-trash"></i>
+            </a>
+            <a href="series/detalhesTv.php?id=<?= $serie['id'] ?>" class="card-action" title="Detalhes">
+                <i class="bi bi-plus"></i>
+            </a>
+            <a href="other/userAction.php?id=<?= $serie['id'] ?>" class="card-action user-action" title="Ação do Usuário" onclick="handleUserAction(event, <?= $serie['id'] ?>)">
+                <i class="bi bi-person"></i>
+            </a>
+        </div>
+    </div>
+    <div class="serie-info">
+        <h4><?= $serie['titulo'] ?></h4>
+        <div> 
+            <span class="serie-status" style="background-color: <?= getSerieStatusColor($serie['status']) ?>">
+                <?= $serie['status'] ?>
+            </span>
+        </div>
+        <div class="meta">
+            <span><?= $serie['ano_lancamento'] ?></span> |
+            <span><?= $serie['pais'] ?></span>
+        </div>
+        <div class="generos">
+            <?php foreach (array_slice($serie['generos'], 0, 3) as $genero): ?>
+            <span><?= $genero ?></span>
+            <?php endforeach; ?>
+        </div>
+        <div class="avaliacao">
+            <?php
+            $avaliacao = $serie['avaliacao'];
+            $estrelasCheias = floor($avaliacao);
+            $temMeiaEstrela = ($avaliacao - $estrelasCheias) >= 0.5;
+            $estrelasVazias = 5 - $estrelasCheias - ($temMeiaEstrela ? 1 : 0);
+            
+            echo str_repeat('<i class="bi bi-star-fill"></i>', $estrelasCheias);
+            
+            if ($temMeiaEstrela) {
+                echo '<i class="bi bi-star-half"></i>';
+            }
+            
+            echo str_repeat('<i class="bi bi-star"></i>', $estrelasVazias);
+            ?>
+        </div>
+        <div class="progresso">
+            <div class="barra" style="width: <?= $serie['progresso'] ?? 0 ?>%"></div>
+        </div>
+        <div class="status-badge" style="background-color: <?= getStatusColor($serie['user_status'] ?? 'Não assistido') ?>">
+            <?= $serie['user_status'] ?? 'Não assistido' ?>
+        </div>
+    </div>
+</div>
+<?php endforeach;
