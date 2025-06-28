@@ -109,16 +109,20 @@ function truncarTexto($texto, $limite = 20) {
     /* ============== GLOBAL STYLES ================ */
     /* ============================================= */
     :root {
-      --primary-color: #4CAF50;
-      --primary-dark: #2E7D32;
-      --secondary-color: #e50914;
-      --dark-bg: #2c3e50;
-      --darker-bg: #1a1a2e;
-      --text-dark: #212529;
-      --text-medium: #495057;
-      --text-light: #f5f5f1;
-      --card-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-      --card-shadow-hover: 0 12px 28px rgba(0, 0, 0, 0.12);
+    :root {
+        --primary-gradient: linear-gradient(135deg, #43A047 0%, #1B5E20 100%);
+        --primary-color: #43A047;
+        --primary-dark: #1B5E20;
+        --secondary-color: #e50914;
+        --bg-color: rgb(96, 105, 114);
+        --card-bg: rgba(255, 255, 255, 0.95);
+        --text-dark: #2c3e50;
+        --text-medium: #495057;
+        --text-light: #f8f9fa;
+        --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12);
+        --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.16);
+        --shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.19);
+        --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     }
 
     * {
