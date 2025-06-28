@@ -542,19 +542,30 @@ function truncarTexto($texto, $limite = 20) {
       color: gold;
     }
 
-    .progresso {
-      height: 6px;
-      background: #f0f0f0;
-      border-radius: 3px;
-      margin: 12px 0 16px;
-      overflow: hidden;
+    .progress-container {
+        margin: 12px 0;
     }
 
-    .barra {
-      height: 100%;
-      background: linear-gradient(90deg, var(--secondary-color), #ff6b6b);
-      border-radius: 3px;
-      transition: width 0.6s ease;
+    .progress-label {
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.8rem;
+        color: var(--text-medium);
+        margin-bottom: 4px;
+    }
+
+    .progress-bar {
+        height: 6px;
+        background: #f0f0f0;
+        border-radius: 3px;
+        overflow: hidden;
+    }
+
+    .progress-fill {
+        height: 100%;
+        background: var(--primary-gradient);
+        border-radius: 3px;
+        transition: width 0.6s ease;
     }
 
     .status-badge {
