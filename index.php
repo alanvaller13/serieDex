@@ -1,4 +1,3 @@
-faça o mesmo que vc fez com o detalhes, mas para a index.php
 <?php
 // Configurações e funções
 function loadJsonData($file) {
