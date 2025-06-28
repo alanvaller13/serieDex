@@ -777,9 +777,16 @@ function truncarTexto($texto, $limite = 20) {
                 echo str_repeat('<i class="bi bi-star"></i>', $estrelasVazias);
                 ?>
             </div>
-            <div class="progresso">
-                <div class="barra" style="width: <?= $serie['progresso'] ?? 0 ?>%"></div>
-            </div>
+                <div class="progress-container">
+                    <div class="progress-label">
+                        <span><?= $serie['progresso'] ?? 0 ?>%</span>
+                        <span><?= $serie['nEpisodios'] ?? 0 ?> eps</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: <?= $serie['progresso'] ?? 0 ?>%"></div>
+                    </div>
+                </div>
+                
             <div class="status-badge" style="background-color: <?= getStatusColor($serie['user_status'] ?? 'Não assistido') ?>">
                 <?= $serie['user_status'] ?? 'Não assistido' ?>
             </div>
