@@ -67,7 +67,7 @@ function getStreamingIcon($ondeVisto) {
 
 // Definir BASE_URL se não estiver definida
 if (!defined('BASE_URL')) {
-    define('BASE_URL', 'https://dexseries.onrender.com/');
+    define('BASE_URL', 'http://localhost/dexSeries');
 }
 
 // Exibir mensagens de feedback
@@ -103,21 +103,23 @@ function truncarTexto($texto, $limite = 20) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minhas Séries</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <style>
     /* ============================================= */
     /* ============== GLOBAL STYLES ================ */
     /* ============================================= */
     :root {
+      --primary-gradient: linear-gradient(135deg, #4CAF50 0%, #2E7D32 100%);
       --primary-color: #4CAF50;
       --primary-dark: #2E7D32;
       --secondary-color: #e50914;
-      --dark-bg: #2c3e50;
+      --dark-bg:rgb(108, 107, 107);
       --darker-bg: #1a1a2e;
       --text-dark: #212529;
       --text-medium: #495057;
       --text-light: #f5f5f1;
-      --card-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+      --card-shadow: 0 5px 20px rgba(0, 0, 0, 0.61);
       --card-shadow-hover: 0 12px 28px rgba(0, 0, 0, 0.12);
     }
 
@@ -129,8 +131,8 @@ function truncarTexto($texto, $limite = 20) {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      background-color:rgb(96, 105, 114);
-      color: var(--text-dark);
+      background-color: rgb(96, 105, 114) !important;
+      color: var(--text-light);
       line-height: 1.6;
     }
 
@@ -168,7 +170,7 @@ function truncarTexto($texto, $limite = 20) {
     /* ================== HEADER =================== */
     /* ============================================= */
     .site-header {
-      background: linear-gradient(135deg, var(--dark-bg) 0%, var(--darker-bg) 100%);
+      background: 0 4px 12px rgba(63, 29, 187, 0.94);
       color: white;
       padding: 2rem 0;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -542,19 +544,30 @@ function truncarTexto($texto, $limite = 20) {
       color: gold;
     }
 
-    .progresso {
-      height: 6px;
-      background: #f0f0f0;
-      border-radius: 3px;
-      margin: 12px 0 16px;
-      overflow: hidden;
+    .progress-container {
+        margin: 12px 0;
     }
 
-    .barra {
-      height: 100%;
-      background: linear-gradient(90deg, var(--secondary-color), #ff6b6b);
-      border-radius: 3px;
-      transition: width 0.6s ease;
+    .progress-label {
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.8rem;
+        color: var(--text-medium);
+        margin-bottom: 4px;
+    }
+
+    .progress-bar {
+        height: 6px;
+        background: #f0f0f0;
+        border-radius: 3px;
+        overflow: hidden;
+    }
+
+    .progress-fill {
+        height: 100%;
+        background: var(--primary-gradient);
+        border-radius: 3px;
+        transition: width 0.6s ease;
     }
 
     .status-badge {
@@ -777,9 +790,16 @@ function truncarTexto($texto, $limite = 20) {
                 echo str_repeat('<i class="bi bi-star"></i>', $estrelasVazias);
                 ?>
             </div>
-            <div class="progresso">
-                <div class="barra" style="width: <?= $serie['progresso'] ?? 0 ?>%"></div>
-            </div>
+                <div class="progress-container">
+                    <div class="progress-label">
+                        <span><?= $serie['progresso'] ?? 0 ?>%</span>
+                        <span><?= $serie['nEpisodios'] ?? 0 ?> eps</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: <?= $serie['progresso'] ?? 0 ?>%"></div>
+                    </div>
+                </div>
+                
             <div class="status-badge" style="background-color: <?= getStatusColor($serie['user_status'] ?? 'Não assistido') ?>">
                 <?= $serie['user_status'] ?? 'Não assistido' ?>
             </div>
