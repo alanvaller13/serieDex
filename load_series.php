@@ -1,9 +1,5 @@
 <?php
-// Definir BASE_URL se não estiver definida
-if (!defined('BASE_URL')) {
-    define('BASE_URL', 'https://dexseries.onrender.com/');
-}
-
+// Configurações e funções
 function loadJsonData($file) {
     $path = __DIR__ . '/data/' . $file;
     if (!file_exists($path)) {
@@ -13,6 +9,28 @@ function loadJsonData($file) {
     $content = file_get_contents($path);
     $data = json_decode($content, true);
     return is_array($data) ? $data : [];
+}
+
+// Carrega as séries
+$series = loadJsonData('series.json');
+
+// Configuração de paginação
+$seriesPorPagina = 4;
+$paginaAtual = isset($_GET['page']) ? max(1, (int)$_GET['page']) : 1;
+$offset = ($paginaAtual - 1) * $seriesPorPagina;
+$seriesPaginadas = array_slice($series, $offset, $seriesPorPagina);
+
+// Função para obter cor do status
+function getStatusColor($status) {
+    switch ($status) {
+        case 'Não assistido': return '#666666';
+        case 'Assistindo': return '#2196F3';
+        case 'Concluída': return '#4CAF50';
+        case 'Pausado': return '#FF9800';
+        case 'Abandonado': return '#F44336';
+        case 'Em Dia': return '#FFC107';
+        default: return '#666666';
+    }
 }
 
 // Função para obter cor do status da série
@@ -36,44 +54,47 @@ function getStreamingIcon($ondeVisto) {
         'PrimeVideo' => '4.png',
         'GloboPlay' => '5.png',
         'DisneyPlus' => '6.png',
-        'Disney+' => '6.png', // alternativa
+        'Disney+' => '6.png',
         'ParamountPlus' => '7.png',
-        'Paramount+' => '7.png', // alternativa
+        'Paramount+' => '7.png',
         'HBO MAX' => '8.png',
         'PlutoTV' => '9.png'
     ];
-    
     return $icons[$ondeVisto] ?? 'default.png';
 }
 
-// Função para obter cor do status
-function getStatusColor($status) {
-    switch ($status) {
-        case 'Não assistido': return '#666666';
-        case 'Assistindo': return '#2196F3';
-        case 'Concluída': return '#4CAF50';
-        case 'Pausado': return '#FF9800';
-        case 'Abandonado': return '#F44336';
-        case 'Em Dia': return '#FFC107';
-        default: return '#666666';
-    }
+// Definir BASE_URL se não estiver definida
+if (!defined('BASE_URL')) {
+    define('BASE_URL', 'http://localhost/dexSeries');
 }
 
-$series = loadJsonData('series.json');
-$seriesPorPagina = 4;
-$paginaAtual = isset($_GET['page']) ? (int)$_GET['page'] : 1;
-$offset = ($paginaAtual - 1) * $seriesPorPagina;
-$seriesPaginadas = array_slice($series, $offset, $seriesPorPagina);
+// Função para truncar texto
+function truncarTexto($texto, $limite = 20) {
+    if (strlen($texto) > $limite) {
+        return substr($texto, 0, $limite) . "...";
+    }
+    return $texto;
+}
 
-foreach ($seriesPaginadas as $serie): ?>
+// Verifica se há séries para exibir
+if (empty($seriesPaginadas)) {
+    exit; // Encerra o script se não houver séries
+}
+
+// Inicia o buffer de saída
+ob_start();
+?>
+
+<?php foreach ($seriesPaginadas as $serie): ?>
 <div class="serie-card" 
      data-status="<?= strtolower(str_replace(' ', '-', $serie['status'])) ?>"
      data-user-status="<?= strtolower(str_replace(' ', '-', $serie['user_status'] ?? 'nao-assistido')) ?>">
     <div class="serie-image">
-        <img src="<?= BASE_URL . '/' . $serie['imagem'] ?>" alt="<?= $serie['titulo'] ?>">
+        <img src="<?= BASE_URL . '/' . $serie['imagem'] ?>" alt="<?= htmlspecialchars($serie['titulo']) ?>" onerror="this.src='<?= BASE_URL ?>/assets/default-poster.jpg'">
+        
         <?php if (!empty($serie['onde_visto'])): ?>
-        <div class="streaming-icon" title="<?= $serie['onde_visto'] ?>">
-            <img src="<?= BASE_URL ?>/assets/icons/<?= getStreamingIcon($serie['onde_visto']) ?>" alt="<?= $serie['onde_visto'] ?>">
+        <div class="streaming-icon" title="<?= htmlspecialchars($serie['onde_visto']) ?>">
+            <img src="<?= BASE_URL ?>/assets/icons/<?= getStreamingIcon($serie['onde_visto']) ?>" alt="<?= htmlspecialchars($serie['onde_visto']) ?>" onerror="this.src='<?= BASE_URL ?>/assets/icons/default.png'">
         </div>
         <?php endif; ?>
         
@@ -99,21 +120,25 @@ foreach ($seriesPaginadas as $serie): ?>
         </div>
     </div>
     <div class="serie-info">
-        <h4><?= $serie['titulo'] ?></h4>
-        <div> 
+        <h4><?= truncarTexto(htmlspecialchars($serie['titulo']), 20) ?></h4>
+        
+        <div>
             <span class="serie-status" style="background-color: <?= getSerieStatusColor($serie['status']) ?>">
-                <?= $serie['status'] ?>
+                <?= htmlspecialchars($serie['status']) ?>
             </span>
         </div>
+        
         <div class="meta">
-            <span><?= $serie['ano_lancamento'] ?></span> |
-            <span><?= $serie['pais'] ?></span>
+            <span><?= htmlspecialchars($serie['ano_lancamento']) ?></span> |
+            <span><?= htmlspecialchars($serie['pais']) ?></span>
         </div>
+        
         <div class="generos">
             <?php foreach (array_slice($serie['generos'], 0, 3) as $genero): ?>
-            <span><?= $genero ?></span>
+            <span><?= htmlspecialchars($genero) ?></span>
             <?php endforeach; ?>
         </div>
+        
         <div class="avaliacao">
             <?php
             $avaliacao = $serie['avaliacao'];
@@ -130,12 +155,25 @@ foreach ($seriesPaginadas as $serie): ?>
             echo str_repeat('<i class="bi bi-star"></i>', $estrelasVazias);
             ?>
         </div>
-        <div class="progresso">
-            <div class="barra" style="width: <?= $serie['progresso'] ?? 0 ?>%"></div>
+        
+        <div class="progress-container">
+            <div class="progress-label">
+                <span><?= $serie['progresso'] ?? 0 ?>%</span>
+                <span><?= $serie['nEpisodios'] ?? 0 ?> eps</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: <?= $serie['progresso'] ?? 0 ?>%"></div>
+            </div>
         </div>
+        
         <div class="status-badge" style="background-color: <?= getStatusColor($serie['user_status'] ?? 'Não assistido') ?>">
-            <?= $serie['user_status'] ?? 'Não assistido' ?>
+            <?= htmlspecialchars($serie['user_status'] ?? 'Não assistido') ?>
         </div>
     </div>
 </div>
-<?php endforeach;
+<?php endforeach; ?>
+
+<?php
+// Limpa o buffer e envia a saída
+ob_end_flush();
+?>
