@@ -107,8 +107,8 @@ ob_start();
         <div class="card-actions"> 
             <a href="series/detalhesTv.php?id=<?= $serie['id'] ?>" class="card-action" title="Detalhes">
                 <i class="bi bi-plus"></i>
-
-
+            </a>
+            
             <!-- </a><a href="series/editarTv.php?id=<?= $serie['id'] ?>" class="card-action" title="Editar">
                 <i class="bi bi-pencil"></i>
             </a>
