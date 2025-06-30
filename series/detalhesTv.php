@@ -13,9 +13,20 @@ if (!$serie) {
     exit;
 }
 
+// Carregar episódios do arquivo JSON
+$episodesFile = "../episodio/{$id}.json";
+$temporadas = [];
+
+if (file_exists($episodesFile)) {
+    $episodesData = json_decode(file_get_contents($episodesFile), true);
+    if ($episodesData) {
+        $temporadas = $episodesData;
+    }
+}
+
 // Configurações básicas
-$hasTemporadas = isset($serie['temporadas']) && is_array($serie['temporadas']) && count($serie['temporadas']) > 0;
-$nTemporadas = $hasTemporadas ? count($serie['temporadas']) : 0;
+$hasTemporadas = count($temporadas) > 0;
+$nTemporadas = $hasTemporadas ? count($temporadas) : 0;
 $totalEpisodios = $serie['nEpisodios'] ?? 0;
 
 // Calcular progresso
@@ -23,7 +34,7 @@ $progressoGeral = $serie['progresso'] ?? 0;
 $totalAssistidos = 0;
 
 if ($hasTemporadas) {
-    foreach ($serie['temporadas'] as $temporada) {
+    foreach ($temporadas as $temporada) {
         if (isset($temporada['episodios'])) {
             $episodiosAssistidos = array_filter($temporada['episodios'], function($ep) { 
                 return isset($ep['assistido']) && $ep['assistido']; 
@@ -604,7 +615,7 @@ function renderAvaliacao($nota) {
                 <!-- Aba de Temporadas -->
                 <div class="tab-pane fade" id="temporadas" role="tabpanel" aria-labelledby="temporadas-tab">
                     <?php if ($hasTemporadas): ?>
-                        <?php foreach ($serie['temporadas'] as $temporada): 
+                        <?php foreach ($temporadas as $temporada): 
                             $episodiosTemporada = $temporada['episodios'] ?? [];
                             $episodiosAssistidos = array_filter($episodiosTemporada, function($ep) { 
                                 return isset($ep['assistido']) && $ep['assistido']; 
@@ -614,10 +625,13 @@ function renderAvaliacao($nota) {
                         ?>
                             <div class="temporada-container mt-3">
                                 <div class="temporada-header">
-                                    <h3 class="temporada-title">Temporada <?= $temporada['numero'] ?? 1 ?></h3>
+                                    <h3 class="temporada-title">Temporada <?= $temporada['temporada'] ?? 1 ?></h3>
+                                    <?php if (!empty($temporada['codinome']) && $temporada['codinome'] != '-'): ?>
+                                        <small><?= htmlspecialchars($temporada['codinome']) ?></small>
+                                    <?php endif; ?>
                                     <div class="temporada-meta">
-                                        <span><?= count($episodiosTemporada) ?> episódios</span>
-                                        <span><?= count($episodiosAssistidos) ?> assistidos</span>
+                                        <span><?= count($episodiosTemporada) ?> Episódios</span>
+                                      -  <span><?= count($episodiosAssistidos) ?> Assistidos</span> -
                                         <span><?= $progressoTemporada ?>%</span>
                                     </div>
                                 </div>
@@ -628,9 +642,9 @@ function renderAvaliacao($nota) {
                                             <div class="episodio-info">
                                                 <span class="episodio-numero"><?= $episodio['codigo'] ?? 'E1' ?></span>
                                                 <div>
-                                                    <h6 class="mb-0"><?= htmlspecialchars($episodio['titulo'] ?? 'Episódio sem título') ?></h6>
-                                                    <?php if (!empty($episodio['data'])): ?>
-                                                        <small class="text-muted"><?= $episodio['data'] ?></small>
+                                                    <h6 class="mb-0"><?= htmlspecialchars($episodio['nome'] ?? 'Episódio sem título') ?></h6>
+                                                    <?php if (!empty($episodio['data_lancamento']) && $episodio['data_lancamento'] != '00/00/0000'): ?>
+                                                        <small class="text-muted"><?= $episodio['data_lancamento'] ?></small>
                                                     <?php endif; ?>
                                                 </div>
                                             </div>
@@ -638,9 +652,6 @@ function renderAvaliacao($nota) {
                                                 <span class="episodio-status" style="background-color: <?= isset($episodio['assistido']) && $episodio['assistido'] ? getStatusColor('Concluída') : '#6c757d' ?>">
                                                     <?= isset($episodio['assistido']) && $episodio['assistido'] ? 'Assistido' : 'Não assistido' ?>
                                                 </span>
-                                                <?php if (!empty($episodio['duracao'])): ?>
-                                                    <span class="badge bg-light text-dark ms-2"><?= $episodio['duracao'] ?></span>
-                                                <?php endif; ?>
                                             </div>
                                         </div>
                                     <?php endforeach; ?>
