@@ -65,7 +65,7 @@ function getStreamingIcon($ondeVisto) {
 
 // Definir BASE_URL se não estiver definida
 if (!defined('BASE_URL')) {
-    define('BASE_URL', 'https://dexseries.onrender.com/');
+    define('BASE_URL', 'https://dexseries.onrender.com');
 }
 
 // Função para truncar texto
@@ -104,19 +104,21 @@ ob_start();
         </div>
         <?php endif; ?>
         
-        <div class="card-actions">
-            <a href="series/editarTv.php?id=<?= $serie['id'] ?>" class="card-action" title="Editar">
+        <div class="card-actions"> 
+            <a href="series/detalhesTv.php?id=<?= $serie['id'] ?>" class="card-action" title="Detalhes">
+                <i class="bi bi-plus"></i>
+
+
+            <!-- </a><a href="series/editarTv.php?id=<?= $serie['id'] ?>" class="card-action" title="Editar">
                 <i class="bi bi-pencil"></i>
             </a>
             <a href="series/excluirTv.php?id=<?= $serie['id'] ?>" class="card-action" title="Excluir" onclick="return confirm('Tem certeza que deseja excluir esta série?')">
                 <i class="bi bi-trash"></i>
             </a>
-            <a href="series/detalhesTv.php?id=<?= $serie['id'] ?>" class="card-action" title="Detalhes">
-                <i class="bi bi-plus"></i>
-            </a>
             <a href="other/userAction.php?id=<?= $serie['id'] ?>" class="card-action user-action" title="Ação do Usuário" onclick="handleUserAction(event, <?= $serie['id'] ?>)">
                 <i class="bi bi-person"></i>
             </a>
+             -->
         </div>
     </div>
     <div class="serie-info">
