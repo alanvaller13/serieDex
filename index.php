@@ -50,16 +50,34 @@ function getSerieStatusColor($status) {
 function getStreamingIcon($ondeVisto) {
     $icons = [
         'Tv' => '1.png',
+        'Tv' => 'tv.png'
         'Web' => '2.png',
+        'Web' => 'web.png',
         'Netflix' => '3.png',
+        'Netflix' => 'netflix.png',
         'PrimeVideo' => '4.png',
+        'PrimeVideo' => 'primevideo.png',
+        'PrimeVideo' => 'prime-video.png',
         'GloboPlay' => '5.png',
+        'GloboPlay' => 'globoplay.png',
+        'Disney+' => '6.png',
+        'Disney+' => 'disneyplus.png',
+        'Disney+' => 'disneymais.png',
         'DisneyPlus' => '6.png',
-        'Disney+' => '6.png', // alternativa
+        'DisneyPlus' => 'disneyplus.png',
+        'DisneyPlus' => 'disneymais.png',
         'ParamountPlus' => '7.png',
-        'Paramount+' => '7.png', // alternativa
+        'ParamountPlus' => 'paramountplus.png',
+        'ParamountPlus' => 'paramountmais.png',
+        'Paramount+' => '7.png',
+        'Paramount+' => 'paramountplus.png',
+        'Paramount+' => 'paramountmais.png',
         'HBO MAX' => '8.png',
+        'HBO MAX' => 'hbomax.png',
+        'HBO MAX' => 'max.png',
         'PlutoTV' => '9.png'
+        'PlutoTV' => 'pluto.png'
+        'PlutoTV' => 'plutotv.png'
     ];
     
     return $icons[$ondeVisto] ?? 'default.png';
