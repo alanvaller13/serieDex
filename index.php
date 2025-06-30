@@ -50,7 +50,7 @@ function getSerieStatusColor($status) {
 function getStreamingIcon($ondeVisto) {
     $icons = [
         'Tv' => '1.png',
-        'Tv' => 'tv.png'
+        'Tv' => 'tv.png',
         'Web' => '2.png',
         'Web' => 'web.png',
         'Netflix' => '3.png',
@@ -75,8 +75,8 @@ function getStreamingIcon($ondeVisto) {
         'HBO MAX' => '8.png',
         'HBO MAX' => 'hbomax.png',
         'HBO MAX' => 'max.png',
-        'PlutoTV' => '9.png'
-        'PlutoTV' => 'pluto.png'
+        'PlutoTV' => '9.png',
+        'PlutoTV' => 'pluto.png',
         'PlutoTV' => 'plutotv.png'
     ];
     
