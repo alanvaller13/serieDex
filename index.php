@@ -689,7 +689,11 @@ function truncarTexto($texto, $limite = 20) {
                 <a href="index.php" class="btn btn-primary">
                     <i class="bi bi-house-door"></i> Início
                 </a>
-                <a href="series/cadastrarTv.php" class="btn btn-primary">
+                <a href="meuStatus.php" class="btn btn-primary">
+                    <i class="bi bi-star-circle-fill"></i> Meu Status
+                </a>
+
+                <!-- <a href="series/cadastrarTv.php" class="btn btn-primary">
                     <i class="bi bi-plus-circle-fill"></i> Adicionar Série
                 </a>
                 <a href="series/cadastrarEps.php" class="btn btn-primary">
@@ -697,10 +701,8 @@ function truncarTexto($texto, $limite = 20) {
                 </a>
                 <a href="Outras.php" class="btn btn-primary">
                     <i class="bi bi-plus-circle-fill"></i> Outras Séries
-                </a>
-                <a href="meuStatus.php" class="btn btn-primary">
-                    <i class="bi bi-star-circle-fill"></i> Meu Estatus
-                </a>
+                </a> -->
+
             </div>
         </div>
 
@@ -742,20 +744,23 @@ function truncarTexto($texto, $limite = 20) {
                 <i class="bi bi-star-fill"></i>
             </div>
             <?php endif; ?>
-            
+                      
             <div class="card-actions">
-                <a href="series/editarTv.php?id=<?= $serie['id'] ?>" class="card-action" title="Editar">
+                <a href="series/detalhesTv.php?id=<?= $serie['id'] ?>" class="card-action" title="Detalhes">
+                    <i class="bi bi-plus"></i>
+                </a>
+
+               <!-- <a href="series/editarTv.php?id=<?= $serie['id'] ?>" class="card-action" title="Editar">
                     <i class="bi bi-pencil"></i>
                 </a>
                 <a href="series/excluirTv.php?id=<?= $serie['id'] ?>" class="card-action" title="Excluir" onclick="return confirm('Tem certeza que deseja excluir esta série?')">
                     <i class="bi bi-trash"></i>
                 </a>
-                <a href="series/detalhesTv.php?id=<?= $serie['id'] ?>" class="card-action" title="Detalhes">
-                    <i class="bi bi-plus"></i>
-                </a>
                 <a href="other/userAction.php?id=<?= $serie['id'] ?>" class="card-action user-action" title="Ação do Usuário" onclick="handleUserAction(event, <?= $serie['id'] ?>)">
                     <i class="bi bi-person"></i>
-                </a>
+                </a> -->
+
+
             </div>
         </div>
         <div class="serie-info">
