@@ -49,7 +49,7 @@ function getSerieStatusColor($status) {
 function getStreamingIcon($ondeVisto) {
     $icons = [
         'Tv' => '1.png',
-        'Tv' => 'tv.png'
+        'Tv' => 'tv.png',
         'Web' => '2.png',
         'Web' => 'web.png',
         'Netflix' => '3.png',
