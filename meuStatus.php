@@ -88,16 +88,34 @@ foreach ($statusLabels as $key => $label) {
 function getStreamingIcon($ondeVisto) {
     $icons = [
         'Tv' => '1.png',
+        'Tv' => 'tv.png',
         'Web' => '2.png',
+        'Web' => 'web.png',
         'Netflix' => '3.png',
+        'Netflix' => 'netflix.png',
         'PrimeVideo' => '4.png',
+        'PrimeVideo' => 'primevideo.png',
+        'PrimeVideo' => 'prime-video.png',
         'GloboPlay' => '5.png',
-        'DisneyPlus' => '6.png',
+        'GloboPlay' => 'globoplay.png',
         'Disney+' => '6.png',
+        'Disney+' => 'disneyplus.png',
+        'Disney+' => 'disneymais.png',
+        'DisneyPlus' => '6.png',
+        'DisneyPlus' => 'disneyplus.png',
+        'DisneyPlus' => 'disneymais.png',
         'ParamountPlus' => '7.png',
+        'ParamountPlus' => 'paramountplus.png',
+        'ParamountPlus' => 'paramountmais.png',
         'Paramount+' => '7.png',
+        'Paramount+' => 'paramountplus.png',
+        'Paramount+' => 'paramountmais.png',
         'HBO MAX' => '8.png',
-        'PlutoTV' => '9.png'
+        'HBO MAX' => 'hbomax.png',
+        'HBO MAX' => 'max.png',
+        'PlutoTV' => '9.png',
+        'PlutoTV' => 'pluto.png',
+        'PlutoTV' => 'plutotv.png'
     ];
     return $icons[$ondeVisto] ?? 'default.png';
 
