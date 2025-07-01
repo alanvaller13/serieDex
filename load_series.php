@@ -48,7 +48,6 @@ function getSerieStatusColor($status) {
 // Função para obter ícone do streaming
 function getStreamingIcon($ondeVisto) {
     $icons = [
-    $icons = [
         'Tv' => '1.png', 'tv.png',
         'Web' => '2.png', 'web.png',
         'Netflix' => '3.png','netflix.png',
