@@ -58,7 +58,7 @@ function getStreamingIcon($ondeVisto) {
         'DisneyPlus' => '6.png', 'disneyplus.png', 'disneymais.png',
         'ParamountPlus' => '7.png', 'paramountplus.png', 'paramountmais.png',
         'Paramount+' => '7.png', 'paramountplus.png', 'paramountmais.png',
-        'HBO MAX' => '8.png', 'hbomax.png', 'max.png', 'hbo.png'
+        'HBO MAX' => '8.png', 'hbomax.png', 'max.png', 'hbo.png',
         'PlutoTV' => '9.png', 'pluto.png', 'plutotv.png',
     ];
     return $icons[$ondeVisto] ?? 'default.png';
