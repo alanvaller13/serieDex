@@ -52,18 +52,18 @@ if ($hasTemporadas) {
 
 // Mapeamento de plataformas para ícones
 $plataformaIcons = [
-    'Tv' => '1.png',
-    'Web' => '2.png',
-    'Netflix' => '3.png',
-    'PrimeVideo' => '4.png',
-    'GloboPlay' => '5.png',
-    'DisneyPlus' => '6.png',
-    'Disney+' => '6.png',
-    'ParamountPlus' => '7.png',
-    'Paramount+' => '7.png',
-    'HBO MAX' => '8.png',
-    'PlutoTV' => '9.png',
-    'default' => 'default.png'
+        'Tv' => '1.png', 'tv.png',
+        'Web' => '2.png', 'web.png',
+        'Netflix' => '3.png','netflix.png',
+        'PrimeVideo' => '4.png','primevideo.png', 'prime-video.png',
+        'GloboPlay' => '5.png', 'globoplay.png',
+        'Disney+' => '6.png', 'disneyplus.png', 'disneymais.png',
+        'DisneyPlus' => '6.png', 'disneyplus.png', 'disneymais.png',
+        'ParamountPlus' => '7.png', 'paramountplus.png', 'paramountmais.png',
+        'Paramount+' => '7.png', 'paramountplus.png', 'paramountmais.png',
+        'HBO MAX' => '8.png', 'hbomax.png', 'max.png', 'hbo.png',
+        'PlutoTV' => '9.png', 'pluto.png', 'plutotv.png',
+        'YouTube' => '10.png', 'youtube.png',
 ];
 
 $plataforma = $serie['onde_visto'] ?? '';
@@ -75,12 +75,12 @@ $plataformaIcon = isset($plataformaIcons[$plataforma]) ?
 function getStatusColor($status) {
     $status = strtolower($status);
     switch ($status) {
-        case 'não assistido': return '#666666';
-        case 'assistindo': return '#2196F3';
-        case 'concluída': return '#4CAF50';
-        case 'pausado': return '#FF9800';
-        case 'abandonado': return '#F44336';
-        case 'em dia': return '#FFC107';
+        case 'Não Assistido': return '#666666';
+        case 'Assistindo': return '#2196F3';
+        case 'Concluída': return '#4CAF50';
+        case 'Pausado': return '#FF9800';
+        case 'Abandonado': return '#F44336';
+        case 'Em Dia': return '#FFC107';
         default: return '#666666';
     }
 }
@@ -88,11 +88,11 @@ function getStatusColor($status) {
 function getSerieStatusColor($status) {
     $status = strtolower($status);
     switch ($status) {
-        case 'em exibição': return '#4CAF50';
-        case 'finalizada': return '#2196F3';
-        case 'cancelada': return '#F44336';
-        case 'renovada': return '#FFC107';
-        case 'em hiato': return '#FF9800';
+        case 'Em Exibição': return '#00ff0a';
+        case 'Finalizada': return '#2196F3';
+        case 'Cancelada': return '#F44336';
+        case 'Renovada': return '#FFC107';
+        case 'Em Hiato': return '#FF9800';
         default: return '#666666';
     }
 }
