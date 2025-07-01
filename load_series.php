@@ -23,7 +23,7 @@ $seriesPaginadas = array_slice($series, $offset, $seriesPorPagina);
 // Função para obter cor do status
 function getStatusColor($status) {
     switch ($status) {
-        case 'Não assistido': return '#666666';
+        case 'Não Assistido': return '#666666';
         case 'Assistindo': return '#2196F3';
         case 'Concluída': return '#4CAF50';
         case 'Pausado': return '#FF9800';
@@ -36,7 +36,7 @@ function getStatusColor($status) {
 // Função para obter cor do status da série
 function getSerieStatusColor($status) {
     switch ($status) {
-        case 'Em Exibição': return '#4CAF50';
+        case 'Em Exibição': return '#00ff0a';
         case 'Finalizada': return '#2196F3';
         case 'Cancelada': return '#F44336';
         case 'Renovada': return '#FFC107';
@@ -59,6 +59,7 @@ function getStreamingIcon($ondeVisto) {
         'Paramount+' => '7.png', 'paramountplus.png', 'paramountmais.png',
         'HBO MAX' => '8.png', 'hbomax.png', 'max.png', 'hbo.png',
         'PlutoTV' => '9.png', 'pluto.png', 'plutotv.png',
+        'YouTube' => '10.png', 'youtube.png',
     ];
     return $icons[$ondeVisto] ?? 'default.png';
 }
