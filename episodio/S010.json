@@ -1,0 +1,48 @@
+[
+  {
+    "temporada": 1,
+    "codinome": "-",
+    "episodios": [
+      { "codigo": "S01E01", "nome": "The Night of No Tomorrow", "data_lancamento": "17/09/1983", "assistido": true },
+      { "codigo": "S01E02", "nome": "Eye of the Beholder", "data_lancamento": "24/09/1983", "assistido": true },
+      { "codigo": "S01E03", "nome": "The Hall of Bones", "data_lancamento": "01/10/1983", "assistido": true },
+      { "codigo": "S01E04", "nome": "Valley of the Unicorns", "data_lancamento": "08/10/1983", "assistido": true },
+      { "codigo": "S01E05", "nome": "In Search of the Dungeon Master", "data_lancamento": "15/10/1983", "assistido": true },
+      { "codigo": "S01E06", "nome": "Beauty and the Bogbeast", "data_lancamento": "22/10/1983", "assistido": true },
+      { "codigo": "S01E07", "nome": "Prison Without Walls", "data_lancamento": "29/10/1983", "assistido": true },
+      { "codigo": "S01E08", "nome": "Servant of Evil", "data_lancamento": "05/11/1983", "assistido": true },
+      { "codigo": "S01E09", "nome": "Quest of the Skeleton Warrior", "data_lancamento": "12/11/1983", "assistido": true },
+      { "codigo": "S01E10", "nome": "The Garden of Zinn", "data_lancamento": "19/11/1983", "assistido": true },
+      { "codigo": "S01E11", "nome": "The Box", "data_lancamento": "26/11/1983", "assistido": true },
+      { "codigo": "S01E12", "nome": "The Lost Children", "data_lancamento": "03/12/1983", "assistido": true },
+      { "codigo": "S01E13", "nome": "Presto Spells Disaster", "data_lancamento": "10/12/1983", "assistido": true }
+    ]
+  },
+  {
+    "temporada": 2,
+    "codinome": "-",
+    "episodios": [
+      { "codigo": "S02E01", "nome": "The Girl Who Dreamed Tomorrow", "data_lancamento": "08/09/1984", "assistido": true },
+      { "codigo": "S02E02", "nome": "The Treasure of Tardos", "data_lancamento": "15/09/1984", "assistido": true },
+      { "codigo": "S02E03", "nome": "City at the Edge of Midnight", "data_lancamento": "22/09/1984", "assistido": true },
+      { "codigo": "S02E04", "nome": "The Traitor", "data_lancamento": "29/09/1984", "assistido": true },
+      { "codigo": "S02E05", "nome": "Day of the Dungeon Master", "data_lancamento": "06/10/1984", "assistido": true },
+      { "codigo": "S02E06", "nome": "The Last Illusion", "data_lancamento": "13/10/1984", "assistido": true },
+      { "codigo": "S02E07", "nome": "The Dragon's Graveyard", "data_lancamento": "20/10/1984", "assistido": true },
+      { "codigo": "S02E08", "nome": "Child of the Stargazer", "data_lancamento": "27/10/1984", "assistido": true }
+    ]
+  },
+  {
+    "temporada": 3,
+    "codinome": "-",
+    "episodios": [
+      { "codigo": "S03E01", "nome": "The Dungeon at the Heart of Dawn", "data_lancamento": "14/09/1985", "assistido": true },
+      { "codigo": "S03E02", "nome": "Odyssey of the Twelfth Talisman", "data_lancamento": "21/09/1985", "assistido": true },
+      { "codigo": "S03E03", "nome": "Citadel of Shadow", "data_lancamento": "28/09/1985", "assistido": true },
+      { "codigo": "S03E04", "nome": "The Time Lost", "data_lancamento": "12/10/1985", "assistido": true },
+      { "codigo": "S03E05", "nome": "Cave of the Fairie Dragons", "data_lancamento": "09/11/1985", "assistido": true },
+      { "codigo": "S03E06", "nome": "The Winds of Darkness", "data_lancamento": "07/12/1985", "assistido": true },
+      { "codigo": "S03E07", "nome": "???", "data_lancamento": "28/09/1920", "assistido": true }
+    ]
+  }
+]

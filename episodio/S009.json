@@ -1,0 +1,78 @@
+[
+  {
+    "temporada": 1,
+    "codinome": "-",
+    "episodios": [
+      { "codigo": "S01E01", "nome": "Strategy X", "data_lancamento": "04/11/2000", "assistido": true },
+      { "codigo": "S01E02", "nome": "The X‑Impulse", "data_lancamento": "11/11/2000", "assistido": true },
+      { "codigo": "S01E03", "nome": "Rogue Recruit", "data_lancamento": "18/11/2000", "assistido": true },
+      { "codigo": "S01E04", "nome": "Mutant Crush", "data_lancamento": "25/11/2000", "assistido": true },
+      { "codigo": "S01E05", "nome": "Speed and Spyke", "data_lancamento": "09/12/2000", "assistido": true },
+      { "codigo": "S01E06", "nome": "Middleverse", "data_lancamento": "27/01/2001", "assistido": true },
+      { "codigo": "S01E07", "nome": "Turn of the Rogue", "data_lancamento": "03/02/2001", "assistido": true },
+      { "codigo": "S01E08", "nome": "SpykeCam", "data_lancamento": "10/02/2001", "assistido": true },
+      { "codigo": "S01E09", "nome": "Survival of the Fittest", "data_lancamento": "03/03/2001", "assistido": true },
+      { "codigo": "S01E10", "nome": "Shadowed Past", "data_lancamento": "31/03/2001", "assistido": true },
+      { "codigo": "S01E11", "nome": "Grim Reminder", "data_lancamento": "14/04/2001", "assistido": true },
+      { "codigo": "S01E12", "nome": "The Cauldron – Part 1", "data_lancamento": "05/05/2001", "assistido": true },
+      { "codigo": "S01E13", "nome": "The Cauldron – Part 2", "data_lancamento": "12/05/2001", "assistido": true }
+    ]
+  },
+  {
+    "temporada": 2,
+    "codinome": "-",
+    "episodios": [
+      { "codigo": "S02E01", "nome": "Growing Pains", "data_lancamento": "29/09/2001", "assistido": true },
+      { "codigo": "S02E02", "nome": "Bada‑Bing Bada‑Boom!", "data_lancamento": "06/10/2001", "assistido": true },
+      { "codigo": "S02E03", "nome": "Power Surge", "data_lancamento": "13/10/2001", "assistido": true },
+      { "codigo": "S02E04", "nome": "Fun and Games", "data_lancamento": "20/10/2001", "assistido": true },
+      { "codigo": "S02E05", "nome": "The Beast of Bayville", "data_lancamento": "27/10/2001", "assistido": true },
+      { "codigo": "S02E06", "nome": "Adrift", "data_lancamento": "03/11/2001", "assistido": true },
+      { "codigo": "S02E07", "nome": "African Storm", "data_lancamento": "17/11/2001", "assistido": true },
+      { "codigo": "S02E08", "nome": "Joyride", "data_lancamento": "01/12/2001", "assistido": true },
+      { "codigo": "S02E09", "nome": "On Angel's Wings", "data_lancamento": "15/12/2001", "assistido": true },
+      { "codigo": "S02E10", "nome": "Mindbender", "data_lancamento": "26/01/2002", "assistido": true },
+      { "codigo": "S02E11", "nome": "Shadow Dance", "data_lancamento": "02/02/2002", "assistido": true },
+      { "codigo": "S02E12", "nome": "Retreat", "data_lancamento": "16/02/2002", "assistido": true },
+      { "codigo": "S02E13", "nome": "Walk on the Wild Side", "data_lancamento": "02/03/2002", "assistido": true },
+      { "codigo": "S02E14", "nome": "Operation: Rebirth", "data_lancamento": "30/03/2002", "assistido": true },
+      { "codigo": "S02E15", "nome": "The HeX Factor", "data_lancamento": "20/04/2002", "assistido": true },
+      { "codigo": "S02E16", "nome": "Day of Reckoning – Part 1", "data_lancamento": "11/05/2002", "assistido": true },
+      { "codigo": "S02E17", "nome": "Day of Reckoning – Part 2", "data_lancamento": "11/05/2002", "assistido": true }
+    ]
+  },
+  {
+    "temporada": 3,
+    "codinome": "-",
+    "episodios": [
+      { "codigo": "S03E01", "nome": "Day of Recovery", "data_lancamento": "14/09/2002", "assistido": true },
+      { "codigo": "S03E02", "nome": "The Stuff of Heroes", "data_lancamento": "21/09/2002", "assistido": true },
+      { "codigo": "S03E03", "nome": "Mainstream", "data_lancamento": "28/09/2002", "assistido": true },
+      { "codigo": "S03E04", "nome": "The Stuff of Villains", "data_lancamento": "05/10/2002", "assistido": true },
+      { "codigo": "S03E05", "nome": "Blind Alley", "data_lancamento": "19/10/2002", "assistido": true },
+      { "codigo": "S03E06", "nome": "X‑Treme Measures", "data_lancamento": "02/11/2002", "assistido": true },
+      { "codigo": "S03E07", "nome": "The Toad, The Witch and The Wardrobe", "data_lancamento": "09/11/2002", "assistido": true },
+      { "codigo": "S03E08", "nome": "Self Possessed", "data_lancamento": "16/11/2002", "assistido": true },
+      { "codigo": "S03E09", "nome": "Under Lock and Key", "data_lancamento": "30/11/2002", "assistido": true },
+      { "codigo": "S03E10", "nome": "X23", "data_lancamento": "02/08/2003", "assistido": true },
+      { "codigo": "S03E11", "nome": "Dark Horizon – Part 1", "data_lancamento": "09/08/2003", "assistido": true },
+      { "codigo": "S03E12", "nome": "Dark Horizon – Part 2", "data_lancamento": "16/08/2003", "assistido": true },
+      { "codigo": "S03E13", "nome": "Cruise Control", "data_lancamento": "23/08/2003", "assistido": true }
+    ]
+  },
+  {
+    "temporada": 4,
+    "codinome": "-",
+    "episodios": [
+      { "codigo": "S04E01", "nome": "Impact", "data_lancamento": "30/08/2003", "assistido": true },
+      { "codigo": "S04E02", "nome": "No Good Deed", "data_lancamento": "06/09/2003", "assistido": true },
+      { "codigo": "S04E03", "nome": "Target X", "data_lancamento": "13/09/2003", "assistido": true },
+      { "codigo": "S04E04", "nome": "Sins of the Son", "data_lancamento": "20/09/2003", "assistido": true },
+      { "codigo": "S04E05", "nome": "Uprising", "data_lancamento": "27/09/2003", "assistido": true },
+      { "codigo": "S04E06", "nome": "Cajun Spice", "data_lancamento": "04/10/2003", "assistido": true },
+      { "codigo": "S04E07", "nome": "Ghost of a Chance", "data_lancamento": "11/10/2003", "assistido": true },
+      { "codigo": "S04E08", "nome": "Ascension – Part 1", "data_lancamento": "18/10/2003", "assistido": true },
+      { "codigo": "S04E09", "nome": "Ascension – Part 2", "data_lancamento": "25/10/2003", "assistido": true }
+    ]
+  }
+]
