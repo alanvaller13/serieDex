@@ -71,9 +71,8 @@ $plataformaIcon = isset($plataformaIcons[$plataforma]) ?
     "../assets/icons/" . $plataformaIcons[$plataforma] : 
     "../assets/icons/" . $plataformaIcons['default'];
 
-// Funções para cores
+// Função para obter cor do status
 function getStatusColor($status) {
-    $status = strtolower($status);
     switch ($status) {
         case 'Não Assistido': return '#666666';
         case 'Assistindo': return '#2196F3';
@@ -85,8 +84,8 @@ function getStatusColor($status) {
     }
 }
 
+// Função para obter cor do status da série
 function getSerieStatusColor($status) {
-    $status = strtolower($status);
     switch ($status) {
         case 'Em Exibição': return '#00ff0a';
         case 'Finalizada': return '#2196F3';
