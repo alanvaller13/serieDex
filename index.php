@@ -821,9 +821,11 @@ if (!defined('BASE_URL')) {
                 <div class="serie-image">
                     <img src="<?= BASE_URL . '/' . $serie['imagem'] ?>" alt="<?= $serie['titulo'] ?>">
                     <?php if (!empty($serie['onde_visto'])): ?>
-                    <div class="streaming-icon" title="<?= $serie['onde_visto'] ?>">
-                        <img src="<?= BASE_URL ?>/icons/<?= getStreamingIcon($serie['onde_visto']) ?>" alt="<?= $serie['onde_visto'] ?>">
-                    </div>
+                        <div class="streaming-icon" title="<?= htmlspecialchars($serie['onde_visto']) ?>">
+                            <img src="<?= BASE_URL ?>icons/<?= getStreamingIcon($serie['onde_visto']) ?>"
+                             alt="<?= htmlspecialchars($serie['onde_visto']) ?>">
+                        </div>
+
                     <?php endif; ?>
                     
                     <?php if (isset($serie['favorita']) && $serie['favorita']): ?>
