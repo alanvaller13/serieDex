@@ -87,23 +87,24 @@ function getSerieStatusColor($status) {
 
 // Função para obter ícone do streaming
 function getStreamingIcon($ondeVisto) {
+    $key = strtolower(str_replace([' ', '+', '-'], '', $ondeVisto));
+
     $icons = [
-        'Tv' => '1.png', 'tv.png',
-        'Web' => '2.png', 'web.png',
-        'Netflix' => '3.png','netflix.png',
-        'PrimeVideo' => '4.png','primevideo.png', 'prime-video.png',
-        'GloboPlay' => '5.png', 'globoplay.png',
-        'Disney+' => '6.png', 'disneyplus.png', 'disneymais.png',
-        'DisneyPlus' => '6.png', 'disneyplus.png', 'disneymais.png',
-        'ParamountPlus' => '7.png', 'paramountplus.png', 'paramountmais.png',
-        'Paramount+' => '7.png', 'paramountplus.png', 'paramountmais.png',
-        'HBO MAX' => 'max.png', 'hbo.png',
-        'PlutoTV' => '9.png', 'pluto.png', 'plutotv.png',
-        'YouTube' => '10.png', 'youtube.png',
+        'tv'            => '1.png',
+        'web'           => '2.png',
+        'netflix'       => '3.png',
+        'primevideo'    => '4.png',
+        'globoplay'     => '5.png',
+        'disneyplus'    => '6.png',
+        'paramountplus' => '7.png',
+        'hbomax'        => 'max.png',
+        'plutotv'       => '9.png',
+        'youtube'       => '10.png',
     ];
-    
-    return $icons[$ondeVisto] ?? 'default.png';
+
+    return $icons[$key] ?? 'default.png';
 }
+
 
 // Função para truncar texto
 function truncarTexto($texto, $limite = 25) {
@@ -821,7 +822,7 @@ if (!defined('BASE_URL')) {
                     <img src="<?= BASE_URL . '/' . $serie['imagem'] ?>" alt="<?= $serie['titulo'] ?>">
                     <?php if (!empty($serie['onde_visto'])): ?>
                     <div class="streaming-icon" title="<?= $serie['onde_visto'] ?>">
-                        <img src="<?= BASE_URL ?>/dexSeries/icons/<?= getStreamingIcon($serie['onde_visto']) ?>" alt="<?= $serie['onde_visto'] ?>">
+                        <img src="<?= BASE_URL ?>/icons/<?= getStreamingIcon($serie['onde_visto']) ?>" alt="<?= $serie['onde_visto'] ?>">
                     </div>
                     <?php endif; ?>
                     
