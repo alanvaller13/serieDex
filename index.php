@@ -851,7 +851,7 @@ echo 'A URL base é: ' . BASE_URL;
                     <img src="<?= BASE_URL . '/' . $serie['imagem'] ?>" alt="<?= $serie['titulo'] ?>">
                     <?php if (!empty($serie['onde_visto'])): ?>
                     <div class="streaming-icon" title="<?= $serie['onde_visto'] ?>">
-                        <img src="<?= BASE_URL ?>../icons/<?= getStreamingIcon($serie['onde_visto']) ?>" alt="<?= $serie['onde_visto'] ?>">
+                        <img src="<?= BASE_URL ?>/icons/<?= getStreamingIcon($serie['onde_visto']) ?>" alt="<?= $serie['onde_visto'] ?>">
                     </div>
                     <?php endif; ?>
                     
